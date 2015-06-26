@@ -6,5 +6,5 @@ import (
 
 func RegisterProviders() {
 
-	GetContext().Logger = services.Logger2{}
+	GetContext().Logger = services.Logger{}
 }
