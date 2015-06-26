@@ -4,4 +4,5 @@ import "fmt"
 
 func Start() {
 	fmt.Println("Hello Bootstrap")
+	RegisterProviders()
 }

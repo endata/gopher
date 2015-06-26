@@ -1,7 +1,10 @@
 package gopher
 
-import "github.com/gopherlabs/gopher/contracts"
+import (
+	"github.com/gopherlabs/gopher-services"
+)
 
-func RegisterLogger(log contracts.Log) {
+func RegisterProviders() {
 
+	GetContext().Logger = services.Logger2{}
 }
