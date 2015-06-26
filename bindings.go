@@ -1,4 +1,4 @@
-package framework
+package gopher
 
 import "github.com/gopherlabs/gopher/contracts"
 
