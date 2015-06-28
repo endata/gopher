@@ -1,8 +1,10 @@
 package contracts
 
-//type Router interface{}
+import "net/http"
 
 type Routerable interface {
-	NewRouter(ctx interface{}) Routerable
-	Get(path string, fn interface{}) Routerable
+	http.Handler
+	NewRouter() Routerable
+	Get(path string, fn func(http.ResponseWriter, *http.Request)) Routerable
+	Serve()
 }
