@@ -1,10 +1,10 @@
 package gopher
 
 import (
-	"github.com/gopherlabs/gopher-services"
+	"github.com/gopherlabs/gopher-services/providers"
 )
 
 func RegisterProviders() {
-
-	GetContext().Logger = services.Logger{}
+	GetContext().Logger = providers.Logger{}
+	GetContext().Router = providers.RouteProvider{}
 }

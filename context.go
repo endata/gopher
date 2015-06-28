@@ -6,6 +6,7 @@ var context = Context{}
 
 type Context struct {
 	Logger contracts.Log
+	Router contracts.Routerable
 }
 
 func GetContext() *Context {
