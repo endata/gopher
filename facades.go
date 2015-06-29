@@ -31,3 +31,7 @@ func NewLogger() contracts.Loggable {
 func NewRenderer() contracts.Renderable {
 	return GetContainer().Renderer.NewRenderer()
 }
+
+func View(w http.ResponseWriter, status int, name string, binding interface{}) {
+	GetContainer().Renderer.View(w, status, name, binding)
+}
