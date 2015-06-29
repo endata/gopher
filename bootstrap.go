@@ -14,4 +14,5 @@ func RegisterProviders() {
 	container.Logger = providers.LogProvider{}
 	container.Router = providers.RouteProvider{}
 	container.Parameters = providers.ParameterProvider{}
+	container.Renderer = providers.RenderProvider{}
 }

@@ -14,12 +14,12 @@ func NewRouter() contracts.Routable {
 
 // Parameters
 
-func PathParams(r *http.Request) map[string]string {
-	return GetContainer().Parameters.PathParams(r)
+func PathParams(req *http.Request) map[string]string {
+	return GetContainer().Parameters.PathParams(req)
 }
 
-func PathParam(r *http.Request, param string) string {
-	return GetContainer().Parameters.PathParam(r, param)
+func PathParam(req *http.Request, param string) string {
+	return GetContainer().Parameters.PathParam(req, param)
 }
 
 // Logger
@@ -32,6 +32,6 @@ func NewRenderer() contracts.Renderable {
 	return GetContainer().Renderer.NewRenderer()
 }
 
-func View(w http.ResponseWriter, status int, name string, binding interface{}) {
-	GetContainer().Renderer.View(w, status, name, binding)
+func View(rw http.ResponseWriter, status int, name string, binding interface{}) {
+	GetContainer().Renderer.View(rw, status, name, binding)
 }
