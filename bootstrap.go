@@ -4,13 +4,15 @@ import (
 	"github.com/gopherlabs/gopher-services/providers"
 )
 
-func Start() {
-	RegisterProviders()
-	GetContainer().Logger.NewLogger().Info("Starting Gopher...")
+func App() container {
+	registerProviders()
+	container := getContainer()
+	container.Logger.NewLogger().Info("Starting Gopher...")
+	return container
 }
 
-func RegisterProviders() {
-	container := GetContainer()
+func registerProviders() {
+	container := getContainer()
 	container.Logger = providers.LogProvider{}
 	container.Router = providers.RouteProvider{}
 	container.Parameters = providers.ParameterProvider{}

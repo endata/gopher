@@ -2,15 +2,15 @@ package gopher
 
 import "github.com/gopherlabs/gopher/contracts"
 
-var container = Container{}
+var ctnr = container{}
 
-type Container struct {
+type container struct {
 	Logger     contracts.Loggable
 	Router     contracts.Routable
 	Parameters contracts.Parametable
 	Renderer   contracts.Renderable
 }
 
-func GetContainer() *Container {
-	return &container
+func getContainer() *container {
+	return &ctnr
 }

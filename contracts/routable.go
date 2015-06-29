@@ -5,7 +5,7 @@ import "net/http"
 type Routable interface {
 	http.Handler
 
-	NewRouter() Routable
+	Router() Routable
 
 	Get(path string, fn func(http.ResponseWriter, *http.Request)) Routable
 
