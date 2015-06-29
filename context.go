@@ -5,8 +5,9 @@ import "github.com/gopherlabs/gopher/contracts"
 var context = Context{}
 
 type Context struct {
-	Logger contracts.Log
-	Router contracts.Routerable
+	Logger     contracts.Loggable
+	Router     contracts.Routable
+	Parameters contracts.Parametable
 }
 
 func GetContext() *Context {
