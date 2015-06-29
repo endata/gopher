@@ -6,11 +6,13 @@ import (
 )
 
 // Routers
+
 func NewRouter() contracts.Routable {
 	return GetContainer().Router.NewRouter()
 }
 
 // Parameters
+
 func PathParams(r *http.Request) map[string]string {
 	return GetContainer().Parameters.PathParams(r)
 }
@@ -20,7 +22,6 @@ func PathParam(r *http.Request, param string) string {
 }
 
 // Logger
-func Hello(msg string) {
-
-	GetContainer().Logger.Hello(msg)
+func NewLogger() contracts.Loggable {
+	return GetContainer().Logger.NewLogger()
 }
