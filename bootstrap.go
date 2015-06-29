@@ -6,12 +6,13 @@ import (
 )
 
 func Start() {
-	fmt.Println("Starting Gopher...")
 	RegisterProviders()
+	fmt.Println("Starting Gopher...")
 }
 
 func RegisterProviders() {
-	GetContainer().Logger = providers.Logger{}
-	GetContainer().Router = providers.RouteProvider{}
-	GetContainer().Parameters = providers.ParameterProvider{}
+	container := GetContainer()
+	container.Logger = providers.Logger{}
+	container.Router = providers.RouteProvider{}
+	container.Parameters = providers.ParameterProvider{}
 }
