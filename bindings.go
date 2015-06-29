@@ -7,4 +7,5 @@ import (
 func RegisterProviders() {
 	GetContext().Logger = providers.Logger{}
 	GetContext().Router = providers.RouteProvider{}
+	GetContext().Parameters = providers.ParameterProvider{}
 }
