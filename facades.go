@@ -1,8 +1,9 @@
 package gopher
 
 import (
-	"github.com/gopherlabs/gopher/contracts"
 	"net/http"
+
+	"github.com/gopherlabs/gopher/contracts"
 )
 
 // Routers
@@ -24,4 +25,9 @@ func PathParam(r *http.Request, param string) string {
 // Logger
 func NewLogger() contracts.Loggable {
 	return GetContainer().Logger.NewLogger()
+}
+
+// Renderer
+func NewRenderer() contracts.Renderable {
+	return GetContainer().Renderer.NewRenderer()
 }
