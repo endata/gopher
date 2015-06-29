@@ -1,6 +1,6 @@
 package contracts
 
-type Log interface {
+type Loggable interface {
 	Hello(msg string)
 
 	//
