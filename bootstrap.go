@@ -4,11 +4,11 @@ import (
 	"github.com/gopherlabs/gopher-services/providers"
 )
 
-func App() container {
+func App() *container {
 	registerProviders()
 	container := getContainer()
-	container.logger.NewLogger().Info("Starting Gopher...")
-	return *container
+	container.logger.Log().Info("Starting Gopher...")
+	return container
 }
 
 func registerProviders() {

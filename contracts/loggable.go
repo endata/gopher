@@ -1,7 +1,7 @@
 package contracts
 
 type Loggable interface {
-	NewLogger() Loggable
+	Log() Loggable
 
 	Info(msg string, args ...interface{})
 
