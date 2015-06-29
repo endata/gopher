@@ -5,10 +5,10 @@ import "github.com/gopherlabs/gopher/contracts"
 var ctnr = container{}
 
 type container struct {
-	Logger     contracts.Loggable
-	Router     contracts.Routable
-	Parameters contracts.Parametable
-	Renderer   contracts.Renderable
+	logger     contracts.Loggable
+	router     contracts.Routable
+	parameters contracts.Parametable
+	renderer   contracts.Renderable
 }
 
 func getContainer() *container {

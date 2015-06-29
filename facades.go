@@ -8,30 +8,30 @@ import (
 
 // Routers
 
-func Router() contracts.Routable {
-	return getContainer().Router.Router()
+func (c container) Router() contracts.Routable {
+	return getContainer().router.Router()
 }
 
 // Parameters
 
 func PathParams(req *http.Request) map[string]string {
-	return getContainer().Parameters.PathParams(req)
+	return getContainer().parameters.PathParams(req)
 }
 
 func PathParam(req *http.Request, param string) string {
-	return getContainer().Parameters.PathParam(req, param)
+	return getContainer().parameters.PathParam(req, param)
 }
 
 // Logger
 func NewLogger() contracts.Loggable {
-	return getContainer().Logger.NewLogger()
+	return getContainer().logger.NewLogger()
 }
 
 // Renderer
 func NewRenderer() contracts.Renderable {
-	return getContainer().Renderer.NewRenderer()
+	return getContainer().renderer.NewRenderer()
 }
 
 func View(rw http.ResponseWriter, status int, name string, binding interface{}) {
-	getContainer().Renderer.View(rw, status, name, binding)
+	getContainer().renderer.View(rw, status, name, binding)
 }

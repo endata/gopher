@@ -7,14 +7,14 @@ import (
 func App() container {
 	registerProviders()
 	container := getContainer()
-	container.Logger.NewLogger().Info("Starting Gopher...")
-	return container
+	container.logger.NewLogger().Info("Starting Gopher...")
+	return *container
 }
 
 func registerProviders() {
 	container := getContainer()
-	container.Logger = providers.LogProvider{}
-	container.Router = providers.RouteProvider{}
-	container.Parameters = providers.ParameterProvider{}
-	container.Renderer = providers.RenderProvider{}
+	container.logger = providers.LogProvider{}
+	container.router = providers.RouteProvider{}
+	container.parameters = providers.ParameterProvider{}
+	container.renderer = providers.RenderProvider{}
 }
