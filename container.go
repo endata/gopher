@@ -2,14 +2,14 @@ package gopher
 
 import "github.com/gopherlabs/gopher/contracts"
 
-var context = Context{}
+var container = Container{}
 
-type Context struct {
+type Container struct {
 	Logger     contracts.Loggable
 	Router     contracts.Routable
 	Parameters contracts.Parametable
 }
 
-func GetContext() *Context {
-	return &context
+func GetContainer() *Container {
+	return &container
 }
