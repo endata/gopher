@@ -8,6 +8,7 @@ type Container struct {
 	Logger     contracts.Loggable
 	Router     contracts.Routable
 	Parameters contracts.Parametable
+	Renderer   contracts.Renderable
 }
 
 func GetContainer() *Container {
