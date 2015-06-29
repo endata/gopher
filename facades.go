@@ -23,7 +23,7 @@ func PathParam(req *http.Request, param string) string {
 }
 
 // Logger
-func Log() contracts.Loggable {
+func (c container) Log() contracts.Loggable {
 	return getContainer().logger.Log()
 }
 
