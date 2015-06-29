@@ -32,6 +32,6 @@ func NewRenderer() contracts.Renderable {
 	return getContainer().renderer.NewRenderer()
 }
 
-func View(rw http.ResponseWriter, status int, name string, binding interface{}) {
+func (c container) View(rw http.ResponseWriter, status int, name string, binding interface{}) {
 	getContainer().renderer.View(rw, status, name, binding)
 }
