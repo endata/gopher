@@ -1,18 +1,17 @@
 package gopher
 
 import (
-	"fmt"
 	"github.com/gopherlabs/gopher-services/providers"
 )
 
 func Start() {
 	RegisterProviders()
-	fmt.Println("Starting Gopher...")
+	GetContainer().Logger.NewLogger().Info("Starting Gopher...")
 }
 
 func RegisterProviders() {
 	container := GetContainer()
-	container.Logger = providers.Logger{}
+	container.Logger = providers.LogProvider{}
 	container.Router = providers.RouteProvider{}
 	container.Parameters = providers.ParameterProvider{}
 }
