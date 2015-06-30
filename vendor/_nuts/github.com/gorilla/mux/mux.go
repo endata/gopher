@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"path"
 
-	"github.com/gopherlabs/gopher-services/vendor/_nuts/github.com/gorilla/context"
+	"github.com/gopherlabs/gopher/vendor/_nuts/github.com/gorilla/context"
 )
 
 // NewRouter returns a new router instance.
