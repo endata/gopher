@@ -10,6 +10,7 @@
 ```
 [![GoDoc](https://godoc.org/github.com/gopherlabs/gopher?status.svg)](https://godoc.org/github.com/gopherlabs/gopher)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 ## Contributing
 
