@@ -8,6 +8,7 @@
               | |                                  
               |_|                                  
 ```
+[![GoDoc](https://godoc.org/github.com/gopherlabs/gopher?status.svg)](https://godoc.org/github.com/gopherlabs/gopher)
 
 ## Contributing
 
