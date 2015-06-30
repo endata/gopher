@@ -22,7 +22,7 @@
 5. Create new Pull Request
 
 
-## Thanks for using Gopher!
+## Thank you for using Gopher!
 
 ```
    _____             
