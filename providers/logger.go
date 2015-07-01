@@ -15,7 +15,7 @@ func (l LogProvider) Register(config map[string]interface{}) interface{} {
 	l.log = *log.New()
 	l.log.Formatter = &log.TextFormatter{
 		ForceColors:   true,
-		FullTimestamp: true,
+		FullTimestamp: config["FullTimestamp"].(bool),
 	}
 	return l
 }

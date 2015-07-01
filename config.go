@@ -2,8 +2,7 @@ package gopher
 
 var config = map[string]map[string]interface{}{
 	"LOGGER": {
-		"ForceColors": true,
-		"lastname":    "Rossi",
+		"FullTimestamp": true,
 	},
 	"ROUTER": {
 		"name": "Router",
