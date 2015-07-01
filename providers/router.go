@@ -11,6 +11,10 @@ type RouteProvider struct {
 	mux *mux.Router
 }
 
+func (r RouteProvider) Register() interface{} {
+	return r
+}
+
 func (r RouteProvider) Router() interface{} {
 	r.mux = mux.NewRouter()
 	return r

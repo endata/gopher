@@ -3,13 +3,11 @@ package gopher
 import "net/http"
 
 // Routers
-
 func (c appContainer) Router() Routable {
 	return container.router.Router().(Routable)
 }
 
 // Parameters
-
 func PathParams(req *http.Request) map[string]string {
 	return container.parameters.PathParams(req)
 }

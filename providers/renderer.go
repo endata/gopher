@@ -9,6 +9,10 @@ import (
 type RenderProvider struct {
 }
 
+func (r RenderProvider) Register() interface{} {
+	return r
+}
+
 func (r RenderProvider) NewRenderer() interface{} {
 	return r
 }

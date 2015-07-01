@@ -42,6 +42,7 @@ func RegisterProvider(providerConst int, provider interface{}) {
 	case PROVIDER_PARAMS:
 		container.parameters = provider.(Parametable)
 	}
+	provider.(Providerable).Register()
 }
 
 func showBanner() {

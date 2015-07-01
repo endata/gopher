@@ -8,6 +8,10 @@ import (
 
 type ParameterProvider struct{}
 
+func (p ParameterProvider) Register() interface{} {
+	return p
+}
+
 func (p ParameterProvider) PathParams(req *http.Request) map[string]string {
 	return mux.Vars(req)
 }
