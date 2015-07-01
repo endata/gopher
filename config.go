@@ -1,13 +1,13 @@
 package gopher
 
 var config = map[string]map[string]interface{}{
-	"LOGGER": {
+	LOGGER: {
 		"FullTimestamp": true,
 	},
-	"ROUTER": {
+	ROUTER: {
 		"name": "Router",
 	},
-	"RENDERER": {
+	RENDERER: {
 		"provider": "Renderer",
 	},
 }
