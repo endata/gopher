@@ -10,7 +10,7 @@ type LogProvider struct {
 	log log.Logger
 }
 
-func (l LogProvider) Register(config map[string]string) interface{} {
+func (l LogProvider) Register(config map[string]interface{}) interface{} {
 	fmt.Println(config)
 	l.log = *log.New()
 	l.log.Formatter = &log.TextFormatter{

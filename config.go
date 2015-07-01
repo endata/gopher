@@ -1,9 +1,9 @@
 package gopher
 
-var config = map[string]map[string]string{
+var config = map[string]map[string]interface{}{
 	"LOGGER": {
-		"name":     "Ricardo",
-		"lastname": "Rossi",
+		"ForceColors": true,
+		"lastname":    "Rossi",
 	},
 	"ROUTER": {
 		"name": "Router",
