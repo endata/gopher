@@ -8,11 +8,11 @@ func (c appContainer) Router() Routable {
 }
 
 // Parameters
-func PathParams(req *http.Request) map[string]string {
+func (c appContainer) PathParams(req *http.Request) map[string]string {
 	return container.parameters.PathParams(req)
 }
 
-func PathParam(req *http.Request, param string) string {
+func (c appContainer) PathParam(req *http.Request, param string) string {
 	return container.parameters.PathParam(req, param)
 }
 
