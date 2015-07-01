@@ -11,10 +11,6 @@ type LogProvider struct {
 }
 
 func (l LogProvider) Register() interface{} {
-	return l
-}
-
-func (l LogProvider) Log() interface{} {
 	l.log = *log.New()
 	l.log.Formatter = &log.TextFormatter{
 		ForceColors:   true,

@@ -18,7 +18,7 @@ func PathParam(req *http.Request, param string) string {
 
 // Logger
 func (c appContainer) Log() Loggable {
-	return container.logger.Log().(Loggable)
+	return container.logger.(Loggable)
 }
 
 // Renderer

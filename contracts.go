@@ -7,7 +7,8 @@ type Providerable interface {
 }
 
 type Loggable interface {
-	Log() interface{}
+	Providerable
+	//Log() interface{}
 	Info(msg string, args ...interface{})
 	Debug(msg string, args ...interface{})
 	Warn(msg string, args ...interface{})
@@ -17,16 +18,19 @@ type Loggable interface {
 }
 
 type Parametable interface {
+	Providerable
 	PathParams(r *http.Request) map[string]string
 	PathParam(r *http.Request, param string) string
 }
 
 type Renderable interface {
+	Providerable
 	NewRenderer() interface{}
 	View(rw http.ResponseWriter, status int, name string, binding interface{})
 }
 
 type Routable interface {
+	Providerable
 	http.Handler
 	Router() interface{}
 	Get(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
