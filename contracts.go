@@ -9,7 +9,6 @@ type Providerable interface {
 
 type Loggable interface {
 	Providerable
-	//Log() interface{}
 	Info(msg string, args ...interface{})
 	Debug(msg string, args ...interface{})
 	Warn(msg string, args ...interface{})
