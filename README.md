@@ -17,6 +17,8 @@
 
 ## Contributing
 
+[![Join the chat at https://gitter.im/gopherlabs/gopher](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
