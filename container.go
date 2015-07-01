@@ -1,36 +1,17 @@
 package gopher
 
-import (
-	"fmt"
-
-	"github.com/gopherlabs/gopher/providers"
-)
-
-var container = appContainer{}
-
-type Provider int
+import "github.com/gopherlabs/gopher/providers"
 
 const (
-	PROVIDER_LOGGER Provider = iota
-	PROVIDER_ROUTER
-	PROVIDER_RENDERER
-	PROVIDER_PARAMS
+	LOGGER   = "LOGGER"
+	ROUTER   = "ROUTER"
+	RENDERER = "RENDERER"
+	PARAMS   = "PARAMS"
 )
 
-func (p Provider) String() string {
-	key := ""
-	switch p {
-	case PROVIDER_LOGGER:
-		key = "Logger"
-	case PROVIDER_ROUTER:
-		key = "Router"
-	case PROVIDER_RENDERER:
-		key = "Renderer"
-	case PROVIDER_PARAMS:
-		key = "Params"
-	}
-	return fmt.Sprintf(key)
-}
+var (
+	container = appContainer{}
+)
 
 type appContainer struct {
 	logger     Providerable
@@ -46,22 +27,22 @@ func App() *appContainer {
 }
 
 func registerProviders() {
-	RegisterProvider(PROVIDER_LOGGER, providers.LogProvider{})
-	RegisterProvider(PROVIDER_ROUTER, providers.RouteProvider{})
-	RegisterProvider(PROVIDER_RENDERER, providers.RenderProvider{})
-	RegisterProvider(PROVIDER_PARAMS, providers.ParameterProvider{})
+	registerProvider(LOGGER, providers.LogProvider{})
+	//	registerProvider(PROVIDER_ROUTER, providers.RouteProvider{})
+	//	registerProvider(PROVIDER_RENDERER, providers.RenderProvider{})
+	//	registerProvider(PROVIDER_PARAMS, providers.ParameterProvider{})
 }
 
-func RegisterProvider(key Provider, provider interface{}) {
+func registerProvider(key string, provider interface{}) {
 	switch key {
-	case PROVIDER_LOGGER:
-		container.logger = provider.(Providerable).Register().(Providerable)
-		container.logger.(Loggable).Info(" * " + key.String() + " ✓")
-	case PROVIDER_ROUTER:
+	case LOGGER:
+		container.logger = provider.(Providerable).Register(config[LOGGER]).(Providerable)
+		container.logger.(Loggable).Info(" * " + key + " ✓" + " has key of " + provider.(Providerable).GetKey())
+	case ROUTER:
 		container.router = provider.(Routable)
-	case PROVIDER_RENDERER:
+	case RENDERER:
 		container.renderer = provider.(Renderable)
-	case PROVIDER_PARAMS:
+	case PARAMS:
 		container.parameters = provider.(Parametable)
 	}
 }

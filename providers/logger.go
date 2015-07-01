@@ -10,13 +10,18 @@ type LogProvider struct {
 	log log.Logger
 }
 
-func (l LogProvider) Register() interface{} {
+func (l LogProvider) Register(config map[string]string) interface{} {
+	fmt.Println(config)
 	l.log = *log.New()
 	l.log.Formatter = &log.TextFormatter{
 		ForceColors:   true,
 		FullTimestamp: true,
 	}
 	return l
+}
+
+func (l LogProvider) GetKey() string {
+	return "LOGGER"
 }
 
 func (l LogProvider) Info(msg string, args ...interface{}) {

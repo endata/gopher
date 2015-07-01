@@ -3,7 +3,8 @@ package gopher
 import "net/http"
 
 type Providerable interface {
-	Register() interface{}
+	Register(config map[string]string) interface{}
+	GetKey() string
 }
 
 type Loggable interface {
