@@ -20,7 +20,7 @@ type appContainer struct {
 
 func App() *appContainer {
 	registerProviders()
-	container.Log().Info("Starting Gopher...")
+	showBanner()
 	return &container
 }
 
@@ -42,4 +42,19 @@ func RegisterProvider(providerConst int, provider interface{}) {
 	case PROVIDER_PARAMS:
 		container.parameters = provider.(Parametable)
 	}
+}
+
+func showBanner() {
+	log := container.Log()
+	log.Info(`|----------------------------------------|`)
+	log.Info(`| STARTING GOPHER ON PORT 3000			`)
+	log.Info(`|    _____								`)
+	log.Info(`|   / ____|           | |					`)
+	log.Info(`|  | |  __  ___  _ __ | |__   ___ _ __	`)
+	log.Info(`|  | | |_ |/ _ \| '_ \| '_ \ / _ \ '__|	`)
+	log.Info(`|  | |__| | (_) | |_) | | | |  __/ |		`)
+	log.Info(`|   \_____|\___/| .__/|_| |_|\___|_|		`)
+	log.Info(`|               | |						`)
+	log.Info(`|               |_|						`)
+	log.Info(`|----------------------------------------|`)
 }
