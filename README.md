@@ -11,7 +11,7 @@
 [![GoDoc](https://godoc.org/github.com/gopherlabs/gopher?status.svg)](https://godoc.org/github.com/gopherlabs/gopher)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Build Status](https://travis-ci.org/gopherlabs/gopher.svg)](https://travis-ci.org/gopherlabs/gopher)
-[![Coverage Status](https://coveralls.io/repos/gopherlabs/gopher/badge.svg)](https://coveralls.io/r/gopherlabs/gopher)
+[![Coverage Status](https://img.shields.io/coveralls/gopherlabs/gopher.svg)](https://coveralls.io/r/gopherlabs/gopher)
 
 ## Contributing
 
