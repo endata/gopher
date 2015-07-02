@@ -37,7 +37,11 @@ func registerProviders() {
 
 func register(provider interface{}) {
 	key := provider.(Providerable).GetKey()
-	container.providers[key] = provider.(Providerable).Register(defaultConfig[key]).(Providerable)
+	config := defaultConfig[key]
+	if len(container.config) > 0 {
+		config = container.config[key]
+	}
+	container.providers[key] = provider.(Providerable).Register(config).(Providerable)
 }
 
 func showBanner() {
