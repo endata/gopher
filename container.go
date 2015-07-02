@@ -1,10 +1,6 @@
 package gopher
 
-import (
-	"fmt"
-
-	"github.com/gopherlabs/gopher/providers"
-)
+import "github.com/gopherlabs/gopher/providers"
 
 const (
 	LOGGER   = "LOGGER"
@@ -18,11 +14,8 @@ var (
 )
 
 type appContainer struct {
-	config     map[string]map[string]interface{}
-	logger     Providerable
-	router     Routable
-	parameters Parametable
-	renderer   Renderable
+	config    map[string]map[string]interface{}
+	providers map[string]Providerable
 }
 
 func App(config ...map[string]map[string]interface{}) *appContainer {
@@ -35,25 +28,16 @@ func App(config ...map[string]map[string]interface{}) *appContainer {
 }
 
 func registerProviders() {
-	registerProvider(LOGGER, providers.LogProvider{})
-	//	registerProvider(PROVIDER_ROUTER, providers.RouteProvider{})
-	//	registerProvider(PROVIDER_RENDERER, providers.RenderProvider{})
-	//	registerProvider(PROVIDER_PARAMS, providers.ParameterProvider{})
+	container.providers = map[string]Providerable{}
+	register(providers.LogProvider{})
+	register(providers.RouteProvider{})
+	register(providers.RenderProvider{})
+	register(providers.ParameterProvider{})
 }
 
-func registerProvider(key string, provider interface{}) {
-	switch key {
-	case LOGGER:
-		fmt.Println(container.config)
-		container.logger = provider.(Providerable).Register(defaultConfig[LOGGER]).(Providerable)
-		container.logger.(Loggable).Info(" * " + key + " ✓" + " has key of " + provider.(Providerable).GetKey())
-	case ROUTER:
-		container.router = provider.(Routable)
-	case RENDERER:
-		container.renderer = provider.(Renderable)
-	case PARAMS:
-		container.parameters = provider.(Parametable)
-	}
+func register(provider interface{}) {
+	key := provider.(Providerable).GetKey()
+	container.providers[key] = provider.(Providerable).Register(defaultConfig[key]).(Providerable)
 }
 
 func showBanner() {

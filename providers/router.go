@@ -11,8 +11,12 @@ type RouteProvider struct {
 	mux *mux.Router
 }
 
-func (r RouteProvider) Register() interface{} {
+func (r RouteProvider) Register(config map[string]interface{}) interface{} {
 	return r
+}
+
+func (l RouteProvider) GetKey() string {
+	return "ROUTER"
 }
 
 func (r RouteProvider) Router() interface{} {

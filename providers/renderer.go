@@ -9,8 +9,12 @@ import (
 type RenderProvider struct {
 }
 
-func (r RenderProvider) Register() interface{} {
+func (r RenderProvider) Register(config map[string]interface{}) interface{} {
 	return r
+}
+
+func (l RenderProvider) GetKey() string {
+	return "RENDERER"
 }
 
 func (r RenderProvider) NewRenderer() interface{} {

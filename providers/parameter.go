@@ -8,8 +8,12 @@ import (
 
 type ParameterProvider struct{}
 
-func (p ParameterProvider) Register() interface{} {
+func (p ParameterProvider) Register(config map[string]interface{}) interface{} {
 	return p
+}
+
+func (l ParameterProvider) GetKey() string {
+	return "PARAMS"
 }
 
 func (p ParameterProvider) PathParams(req *http.Request) map[string]string {
