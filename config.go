@@ -1,6 +1,6 @@
 package gopher
 
-var config = map[string]map[string]interface{}{
+var defaultConfig = map[string]map[string]interface{}{
 	LOGGER: {
 		"FullTimestamp": true,
 	},

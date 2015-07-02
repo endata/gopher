@@ -1,6 +1,10 @@
 package gopher
 
-import "github.com/gopherlabs/gopher/providers"
+import (
+	"fmt"
+
+	"github.com/gopherlabs/gopher/providers"
+)
 
 const (
 	LOGGER   = "LOGGER"
@@ -14,13 +18,17 @@ var (
 )
 
 type appContainer struct {
+	config     map[string]map[string]interface{}
 	logger     Providerable
 	router     Routable
 	parameters Parametable
 	renderer   Renderable
 }
 
-func App() *appContainer {
+func App(config ...map[string]map[string]interface{}) *appContainer {
+	if len(config) > 0 {
+		container.config = config[0]
+	}
 	registerProviders()
 	showBanner()
 	return &container
@@ -36,7 +44,8 @@ func registerProviders() {
 func registerProvider(key string, provider interface{}) {
 	switch key {
 	case LOGGER:
-		container.logger = provider.(Providerable).Register(config[LOGGER]).(Providerable)
+		fmt.Println(container.config)
+		container.logger = provider.(Providerable).Register(defaultConfig[LOGGER]).(Providerable)
 		container.logger.(Loggable).Info(" * " + key + " ✓" + " has key of " + provider.(Providerable).GetKey())
 	case ROUTER:
 		container.router = provider.(Routable)
