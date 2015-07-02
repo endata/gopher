@@ -3,7 +3,8 @@ package gopher
 import "net/http"
 
 // Routers
-func (c appContainer) Get(path string, fn func(http.ResponseWriter, *http.Request)) {
+func (c appContainer) Get(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
+	//c.providers[LOGGER].(Loggable).Info("[%s] %s", req.Method, req.URL.Path)
 	c.providers[ROUTER].(Routable).Get(path, fn)
 }
 
