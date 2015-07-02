@@ -11,7 +11,6 @@ type LogProvider struct {
 }
 
 func (l LogProvider) Register(config map[string]interface{}) interface{} {
-	fmt.Println(config)
 	l.log = *log.New()
 	l.log.Formatter = &log.TextFormatter{
 		ForceColors:   true,
