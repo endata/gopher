@@ -2,73 +2,94 @@ package gopher
 
 import "net/http"
 
-//
-func (c appContainer) Get(path string, fn handlerFn) {
-	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
-	}
-	c.providers[ROUTER].(Routable).Get(path, nfn)
+type routerFacade struct {
+	http.Handler
+	name string
 }
 
-func (c appContainer) Head(path string, fn handlerFn) {
-	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
-	}
-	c.providers[ROUTER].(Routable).Head(path, nfn)
+var routerFac = routerFacade{}
+
+// Router()
+func (c appContainer) Router() Routable {
+	return routerFac
+}
+func (r routerFacade) Register(config map[string]interface{}) interface{} {
+	return r
 }
 
-func (c appContainer) Post(path string, fn handlerFn) {
-	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
-	}
-	c.providers[ROUTER].(Routable).Post(path, nfn)
+func (r routerFacade) GetKey() string {
+	return "ROUTER"
 }
 
-func (c appContainer) Put(path string, fn handlerFn) {
+func (r routerFacade) Get(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).Put(path, nfn)
+	container.providers[ROUTER].(Routable).Get(path, nfn)
 }
 
-func (c appContainer) Patch(path string, fn handlerFn) {
+func (r routerFacade) Head(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).Patch(path, nfn)
+	container.providers[ROUTER].(Routable).Head(path, nfn)
 }
 
-func (c appContainer) Delete(path string, fn handlerFn) {
+func (r routerFacade) Post(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).Delete(path, nfn)
+	container.providers[ROUTER].(Routable).Post(path, nfn)
 }
 
-func (c appContainer) Options(path string, fn handlerFn) {
+func (r routerFacade) Put(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).Options(path, nfn)
+	container.providers[ROUTER].(Routable).Put(path, nfn)
 }
 
-func (c appContainer) Match(path string, fn handlerFn, verbs ...string) {
+func (r routerFacade) Patch(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).Match(path, nfn, verbs...)
+	container.providers[ROUTER].(Routable).Patch(path, nfn)
 }
 
-func (c appContainer) All(path string, fn handlerFn) {
+func (r routerFacade) Delete(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	nfn := func(rw http.ResponseWriter, req *http.Request) {
-		routeMiddleware(c, rw, req, fn)
+		routeMiddleware(container, rw, req, fn)
 	}
-	c.providers[ROUTER].(Routable).All(path, nfn)
+	container.providers[ROUTER].(Routable).Delete(path, nfn)
 }
 
-//
-func (c appContainer) Serve() {
-	c.providers[ROUTER].(Routable).Serve()
+func (r routerFacade) Options(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
+	nfn := func(rw http.ResponseWriter, req *http.Request) {
+		routeMiddleware(container, rw, req, fn)
+	}
+	container.providers[ROUTER].(Routable).Options(path, nfn)
+}
+
+func (r routerFacade) Match(
+	path string,
+	fn func(rw http.ResponseWriter, req *http.Request), verbs ...string) {
+
+	nfn := func(rw http.ResponseWriter, req *http.Request) {
+		routeMiddleware(container, rw, req, fn)
+	}
+	container.providers[ROUTER].(Routable).Match(path, nfn, verbs...)
+
+}
+
+func (r routerFacade) All(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
+	nfn := func(rw http.ResponseWriter, req *http.Request) {
+		routeMiddleware(container, rw, req, fn)
+	}
+	container.providers[ROUTER].(Routable).All(path, nfn)
+}
+
+func (r routerFacade) Serve() {
+	container.providers[ROUTER].(Routable).Serve()
 }
 
 // Parameters
