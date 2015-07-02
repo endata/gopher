@@ -42,6 +42,12 @@ func register(provider interface{}) {
 		config = container.config[key]
 	}
 	container.providers[key] = provider.(Providerable).Register(config).(Providerable)
+	if key == LOGGER {
+		container.providers[LOGGER].(Loggable).Info(`|----------------------------------------|`)
+		container.providers[LOGGER].(Loggable).Info(`| LOADING SERVICE PROVIDERS ...`)
+		container.providers[LOGGER].(Loggable).Info(`|----------------------------------------|`)
+	}
+	container.providers[LOGGER].(Loggable).Info("| * " + key + " ✓")
 }
 
 func showBanner() {
