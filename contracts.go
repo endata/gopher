@@ -31,15 +31,14 @@ type Renderable interface {
 type Routable interface {
 	Providerable
 	http.Handler
-	Router() interface{}
-	Get(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Head(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Post(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Put(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Patch(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Delete(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Options(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	Match(verbs []string, path string, fn func(http.ResponseWriter, *http.Request)) interface{}
-	All(path string, fn func(http.ResponseWriter, *http.Request)) interface{}
+	Get(path string, fn func(http.ResponseWriter, *http.Request))
+	Head(path string, fn func(http.ResponseWriter, *http.Request))
+	Post(path string, fn func(http.ResponseWriter, *http.Request))
+	Put(path string, fn func(http.ResponseWriter, *http.Request))
+	Patch(path string, fn func(http.ResponseWriter, *http.Request))
+	Delete(path string, fn func(http.ResponseWriter, *http.Request))
+	Options(path string, fn func(http.ResponseWriter, *http.Request))
+	Match(verbs []string, path string, fn func(http.ResponseWriter, *http.Request))
+	All(path string, fn func(http.ResponseWriter, *http.Request))
 	Serve()
 }
