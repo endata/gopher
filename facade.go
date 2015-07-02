@@ -1,10 +1,15 @@
 package gopher
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+	"reflect"
+)
 
 // Routers
 func (c appContainer) Get(path string, fn func(rw http.ResponseWriter, req *http.Request)) {
 	//c.providers[LOGGER].(Loggable).Info("[%s] %s", req.Method, req.URL.Path)
+	fmt.Println(reflect.ValueOf(fn))
 	c.providers[ROUTER].(Routable).Get(path, fn)
 }
 
