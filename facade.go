@@ -12,6 +12,7 @@ func (c appContainer) PathParams(req *http.Request) map[string]string {
 	return container.providers[PARAMS].(Parametable).PathParams(req)
 }
 
+// Parameters
 func (c appContainer) PathParam(req *http.Request, param string) string {
 	return container.providers[PARAMS].(Parametable).PathParam(req, param)
 }
@@ -22,12 +23,6 @@ func (c appContainer) Log() Loggable {
 }
 
 // Renderer
-/*
-func NewRenderer() Renderable {
-	return container.renderer.NewRenderer().(Renderable)
-}
-*/
-
 func (c appContainer) View(rw http.ResponseWriter, status int, name string, binding interface{}) {
-	container.providers[LOGGER].(Renderable).View(rw, status, name, binding)
+	container.providers[RENDERER].(Renderable).View(rw, status, name, binding)
 }

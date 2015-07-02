@@ -25,7 +25,6 @@ type Parametable interface {
 
 type Renderable interface {
 	Providerable
-	NewRenderer() interface{}
 	View(rw http.ResponseWriter, status int, name string, binding interface{})
 }
 
