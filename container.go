@@ -62,6 +62,6 @@ func showBanner() {
 	log.Info(`|               | |						`)
 	log.Info(`|               |_|						`)
 	log.Info(`|----------------------------------------|`)
-	log.Info(`| GOPHER READY FOR ACTION ON PORT 3000							`)
+	log.Info(`| GOPHER READY FOR ACTION ON PORT 3000	`)
 	log.Info(`|----------------------------------------|`)
 }
