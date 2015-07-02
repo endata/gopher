@@ -7,9 +7,11 @@ import (
 )
 
 type RenderProvider struct {
+	render *render.Render
 }
 
 func (r RenderProvider) Register(config map[string]interface{}) interface{} {
+	r.render = render.New()
 	return r
 }
 
@@ -18,6 +20,5 @@ func (l RenderProvider) GetKey() string {
 }
 
 func (r RenderProvider) View(rw http.ResponseWriter, status int, name string, binding interface{}) {
-	render := render.New()
-	render.HTML(rw, status, name, binding)
+	r.render.HTML(rw, status, name, binding)
 }
