@@ -20,7 +20,6 @@ func NewApp(config ...framework.Config) *framework.Container {
 	}
 	container := framework.NewContainer(appConf)
 	registerProviders(container)
-	container.ShowBanner()
 	return container
 }
 
