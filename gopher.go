@@ -14,7 +14,11 @@ const (
 )
 
 func NewApp(config ...framework.Config) *framework.Container {
-	container := framework.NewContainer(config[0])
+	appConf := framework.Config{}
+	if len(config) > 0 {
+		appConf = config[0]
+	}
+	container := framework.NewContainer(appConf)
 	registerProviders(container)
 	container.ShowBanner()
 	return container
