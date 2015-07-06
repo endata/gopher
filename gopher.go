@@ -27,6 +27,5 @@ func registerProviders(container *framework.Container) {
 	container.RegisterProvider(new(services.LogProvider))
 	container.RegisterProvider(new(services.RouteProvider))
 	container.RegisterProvider(new(services.ParameterProvider))
-	container.RegisterProvider(new(services.SampleProvider))
 	container.RegisterProvider(new(services.RenderProvider))
 }
