@@ -20,6 +20,7 @@ func NewApp(config ...framework.Config) *framework.Container {
 	}
 	container := framework.NewContainer(appConf)
 	registerProviders(container)
+	container.Use(framework.LoggerMiddleware)
 	return container
 }
 
