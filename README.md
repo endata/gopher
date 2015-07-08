@@ -82,7 +82,7 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 ## Authors 
 
-Created with ♥ by: [Ricardo Rossi](/ricardo-rossi) - Ricardo@GopherLabs.org
+Created with ♥ by: [Ricardo Rossi](https://github.com/ricardo-rossi) - ✉ ricardo@gopherlabs.org
 
 contributions by: 
 
