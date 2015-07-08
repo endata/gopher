@@ -165,6 +165,11 @@ Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder o
 
 Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
+Built-in Service Providers include the following vendored projects:
+
+  * gorilla/mux [gorilla/mux](https://github.com/gorilla/mux)
+  * Sirupsen/logrus [https://github.com/Sirupsen/logrus](https://github.com/Sirupsen/logrus)
+  * unrolled/render [https://github.com/unrolled/render](https://github.com/unrolled/render)
 
 ## License 
 
@@ -175,7 +180,7 @@ Copyright (c) 2015 Ricardo Rossi (Gopher Labs) - ricardo@gopherlabs.org
 
 ## Thank you for using Gopher!
 
-We hope you enjoy using Gopher. Please Star it, Watch it, &amp; Share it.
+We hope you enjoy using Gopher. Please Star it, Watch it, &amp; Share this repo.
 
 Follow us on Twitter [@gopherweb](https://twitter.com/gopherweb) 
 
