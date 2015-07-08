@@ -200,5 +200,3 @@ Star it, watch it, share it.
  \_| |_|  \__,_|_| |_| |_|\___| \_/\_/ \___/|_|  |_|\_\	   .M.                  . . .N  N                    M.
 
 ```
-
-[[top]](#gopher) - [[contents]](#table-of-contents)
