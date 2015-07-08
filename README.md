@@ -175,7 +175,9 @@ Copyright (c) 2015 Ricardo Rossi (Gopher Labs) - ricardo@gopherlabs.org
 
 ## Thank you for using Gopher!
 
-Star it, watch it, share it.
+We hope you enjoy using Gopher. Please Star it, Watch it, &amp; Share it.
+
+Follow us on Twitter [@gopherweb](https://twitter.com/gopherweb) 
 
 ```
    _____             
