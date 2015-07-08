@@ -153,6 +153,18 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 ## Contribution Guide
 
+Thank you for considering contributing to Gopher!
+
+To encourage active collaboration, we strongly encourages pull requests, 
+not just bug reports. "Bug reports" may also be sent in the form of a 
+pull request containing a failing test.
+
+However, if you file a bug report, your issue should contain a title 
+and a clear description of the issue. You should also include as much 
+relevant information as possible and a code sample that demonstrates the 
+issue. The goal of a bug report is to make it easy for yourself - 
+and others - to replicate the bug and develop a fix.
+
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
