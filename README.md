@@ -22,7 +22,7 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [Features](#heroic-features)
+* [Heroic Features](#heroic-features)
 * [Installation](#installation)
 * The Basics
   * Routing
@@ -40,7 +40,7 @@
 * Advanced Topics
   * Creating Service Providers
   * Custom Bootstrapping 
-* API Documentation
+* [API Documentation](#api-documentation)
 * Performance &amp; Benchmarks
 * [Roadmap](#roadmap)
 * [Support](#support)
@@ -52,8 +52,8 @@
 
 ## Heroic Features
 
-* **Simple**: Straightforward, clean *Idiomatic* Go API syntax. 
-* **Intuitive**: Beautiful and clear APIs for maximum coding happiness.
+* **Simple**: Straightforward, clean *Idiomatic* Go syntax. 
+* **Intuitive**: Clear and beautiful APIs for maximum coding happiness and productivity.
 * **Exposed**: No reflection or hidden magic. Just clean code.
 * **Modern**: Features an IoC Container, nested Middleware, flexible Routing, and more.
 * **Extensible**: Create new Service Providers or replace any built-in one with your own.
@@ -69,11 +69,35 @@
 
 //TODO
 
+## Routing
+## Request Handlers
+## Middleware
+## Application Context
+## Logging
+## Views &amp; Templates
+## Responses
 
+# Architecture
+
+## IoC Container
+## Contracts
+## Service Providers
+## Facades  
+
+# Advanced Topics
+
+## Creating Service Providers
+## Custom Bootstrapping 
+  
 
 ## API Documentation
 
 link to godoc
+
+
+## Performance &amp; Benchmarks
+
+//TODO
 
 ## Roadmap
 
