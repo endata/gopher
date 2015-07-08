@@ -145,7 +145,7 @@ link to godoc
 #### Road to v1.0
 
 Feature  | Status
-------------- | -------------
+:------- | :-----:
 Routing APIs  | In Progress
 Request Handlers  | Done
 Middleware  | Done
