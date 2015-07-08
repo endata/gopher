@@ -56,7 +56,7 @@
 * **Intuitive**: Beautiful APIs for maximum coding happiness and productivity.
 * **Exposed**: No reflection or hidden magic. Just clean code.
 * **Modern**: Features an IoC Container, nested Middleware, flexible Routing, and more.
-* **Extensible**: Easy to add a new Service Providers or to replace a built-in one.
+* **Extensible**: Easy to add Service Providers or even replace the built-in ones.
 * **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more.
 * **Speedy**: Gopher is blazing fast. See our benchmarks.
 * **Documented**: APIs are thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
@@ -179,7 +179,7 @@ the bug and develop a fix.
 Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs   
  ✉ ricardo@gopherlabs.org - Twitter [@ricardojrossi](https://twitter.com/ricardojrossi)
 
-Maintained with care by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
+Maintained with care by all its [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
 Built-in Service Providers include the following vendored projects:
 
