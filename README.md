@@ -167,13 +167,13 @@ Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contri
 
 ## License 
 
-MIT
+The Gopher framework is open-sourced software licensed under the [MIT license](mit-license.md)
+
+Copyright (c) 2015 Ricardo Rossi (Gopher Labs) - ricardo@gopherlabs.org 
 
 ## Thank you for using Gopher!
 
 Star it, watch it, share it.
-
-[[TOP]](#gopher) - [[TOC]](#[[top]](#gopher))
 
 ```
    _____             
@@ -198,3 +198,5 @@ Star it, watch it, share it.
  \_| |_|  \__,_|_| |_| |_|\___| \_/\_/ \___/|_|  |_|\_\	   .M.                  . . .N  N                    M.
 
 ```
+
+[[top]](#gopher) - [[contents]](#[[top]](#gopher))
