@@ -22,7 +22,7 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* Features
+* [Features](#heroic-features)
 * [Installation](#installation)
 * The Basics
   * Routing
@@ -50,17 +50,26 @@
 
 ## Overview 
 
-## Installation
-
 ## Heroic Features
 
-* Simple: *Idiomatic* Go API syntax 
-* Clean: No hidden magic, and no reflection
-* Intuitive: Beautiful and clear syntax.
-* Powerful: and intuitive request routing.
-* Extensible: 
-* Fast: Gopher is smoking. See our benchmarks.
-* Comprehensive: Routing, Handlers, Middleware, Logging, Views, and much more..
+* **Simple**: Straightforward, clean *Idiomatic* Go API syntax. 
+* **Intuitive**: Beautiful and clear APIs for maximum coding happiness.
+* **Exposed**: No reflection or hidden magic. Just clean code.
+* **Modern**: Features an IoC Container, nested Middleware, flexible Routing, and more.
+* **Extensible**: Create new Service Providers or replace any built-in one with your own.
+* **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more..
+* **Fast**: Gopher is blazing fast. See our benchmarks.
+* **Documented**: Thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
+
+## Installation
+
+//TODO
+
+# The Basics
+
+//TODO
+
+
 
 ## API Documentation
 
