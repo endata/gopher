@@ -23,7 +23,7 @@
 
 * [Overview](#overview)
 * [Heroic Features](#heroic-features)
-* [Installation](#installation)
+* [Getting Started](#getting-started)
 * [The Basics](#the-basics)
   * [Routing](#routing)
   * [Request Handlers](#request-handlers)
@@ -63,10 +63,18 @@
 * **Speedy**: Gopher is blazing fast. See our benchmarks.
 * **Documented**: APIs are thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
 
-## Installation
+## Getting Started
+
+Let us create our first server:
+
+### Install Gopher
+
+1. Have [Go installed](https://golang.org/dl/).
+2. Have your [GOPATH](http://golang.org/doc/code.html#GOPATH) set.
+3. From your GOPATH, type:
 
 ```
-go get github.com/gopherlabs/gopher`
+go get github.com/gopherlabs/gopher
 ```
 
 # The Basics
