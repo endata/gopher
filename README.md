@@ -199,4 +199,4 @@ Star it, watch it, share it.
 
 ```
 
-[[top]](#gopher) - [[contents]](#[[top]](#gopher))
+[[top]](#gopher) - [[contents]](#gopher)
