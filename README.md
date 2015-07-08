@@ -23,7 +23,7 @@
 
 * [Overview](#overview)
 * Features
-* Installation
+* [Installation](#installation)
 * The Basics
   * Routing
   * Request Handlers
@@ -42,31 +42,41 @@
   * Custom Bootstrapping 
 * API Documentation
 * Performance &amp; Benchmarks
-* Support
+* [Support](#support)
 * Contribution Guide
-* License
+* [Authors](#authors)
+* [License](#license)
 
 ## Overview 
 
-
+## Installation
 
 ## Heroic Features
 
-* a
+* Simplicity: Expressive, *idiomatic* Go API syntax 
+* Magic-less: Extensive framework with no hidden magic, and no reflection
+* Powerful and intuitive request routing
 * b
 
+## API Documentation
 
-## Questions / Ideas ?
+## Support
 
 [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Contributing
+## Contribution Guide
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Authors 
+
+## License 
+
+MIT
 
 ## Thank you for using Gopher!
 
