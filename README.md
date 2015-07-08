@@ -42,6 +42,7 @@
   * Custom Bootstrapping 
 * API Documentation
 * Performance &amp; Benchmarks
+* [Roadmap](#roadmap)
 * [Support](#support)
 * Contribution Guide
 * [Authors](#authors)
@@ -60,6 +61,12 @@
 
 ## API Documentation
 
+link to godoc
+
+## Roadmap
+
+// TODO: roadmap table
+
 ## Support
 
 [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -73,6 +80,10 @@
 5. Create new Pull Request
 
 ## Authors 
+
+created by:  
+
+contributions by: 
 
 ## License 
 
