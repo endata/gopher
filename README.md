@@ -88,7 +88,7 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi) ✉ ricardo@gopherlabs.org
 
-[Project Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
+Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
 ## License 
 
