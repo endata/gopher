@@ -131,8 +131,7 @@
 
 ## API Documentation
 
-//TODO
-link to godoc
+Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework)   
 
 ## Performance &amp; Benchmarks
 
@@ -154,7 +153,7 @@ Responses  | Done
 IoC Container  | Done
 Contracts  | Done
 Facades  | Done
-API Documentation  | In Progress
+GoDoc Documentation  | In Progress
 Github Documentation  | In Progress
 Benchmarks  | Not Started
 Test Cases  | In Progress
