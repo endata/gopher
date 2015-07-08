@@ -33,7 +33,11 @@
   * Contracts
   * Service Providers
   * Facades  
+* Advanced Topics
+  * Creating Service Providers
+  * Custom Bootstrapping 
 * API Documentation
+* Performance &amp; Benchmarks
 * Support
 * Contribution Guide
 * License
