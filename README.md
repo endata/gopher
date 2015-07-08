@@ -73,7 +73,7 @@ Let us create our first server.
 2. Set your [GOPATH](http://golang.org/doc/code.html#GOPATH).
 3. Then, from your GOPATH, type this to install Gopher and its dependencies:
 
-```shell
+```sh
 go get github.com/gopherlabs/gopher
 ```
 
