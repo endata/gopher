@@ -30,9 +30,9 @@
   * [Middleware](#middleware)
   * [Application Context](#application-context)
   * [Logging](#logging)
-  * Views &amp; Templates
-  * Responses
-* Architecture
+  * [Views &amp; Templates](#views--templates)
+  * [Responses](#responses)
+* [Architecture](#architecture)
   * IoC Container
   * Contracts
   * Facades  
