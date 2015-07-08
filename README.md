@@ -159,17 +159,25 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+[[top]](#gopher) - [[contents]](#table-of-contents)
+
 ## Authors 
 
 Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs ✉ ricardo@gopherlabs.org
 
 Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
+[[top]](#gopher) - [[contents]](#table-of-contents)
+
+
 ## License 
 
 The Gopher framework is open-sourced software licensed under the [MIT license](mit-license.md)
 
 Copyright (c) 2015 Ricardo Rossi (Gopher Labs) - ricardo@gopherlabs.org 
+
+[[top]](#gopher) - [[contents]](#table-of-contents)
+
 
 ## Thank you for using Gopher!
 
@@ -199,4 +207,4 @@ Star it, watch it, share it.
 
 ```
 
-[[top]](#gopher) - [[contents]](#gopher)
+[[top]](#gopher) - [[contents]](#table-of-contents)
