@@ -160,6 +160,7 @@ For Gopher announcements, follow us at [@gopherweb](https://twitter.com/gopherwe
 **Chat**   
 Join the conversation at [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+
 ## Contribution Guide
 
 Thank you for considering contributing to Gopher!
