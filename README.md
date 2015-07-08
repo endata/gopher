@@ -22,12 +22,12 @@
 * Installation
 * The Basics
   * Routing
-  * Handlers
-  * Requests
+  * Handlers &amps Requests
   * Middleware
-  * Responses
+  * Application Context
   * Logging
   * Views &amp; Templates
+  * Responses
 * Architecture
   * IoC Container
   * Contracts
