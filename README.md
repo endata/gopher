@@ -95,6 +95,7 @@ func main() {
   r.Get("/router", func(rw http.ResponseWriter, req *http.Request) {
     fmt.Fprint(rw, "Hello, Gopher!")
   })
+  r.Serve()
 }
 ```
 
