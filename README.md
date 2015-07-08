@@ -1,4 +1,4 @@
-#```
+```
    _____             
   / ____|           | |                            
  | |  __  ___  _ __ | |__   ___ _ __               
@@ -8,9 +8,7 @@
               | |                                  
               |_|                                  
 ```
-
 > A modern, light weight, and extensible web framework for GO
-
 [![Build Status](https://travis-ci.org/gopherlabs/gopher.svg)](https://travis-ci.org/gopherlabs/gopher)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Coverage Status](https://img.shields.io/coveralls/gopherlabs/gopher.svg)](https://coveralls.io/r/gopherlabs/gopher)
