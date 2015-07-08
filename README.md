@@ -201,4 +201,4 @@ Star it, watch it, share it.
 
 ```
 
-[[top]](README.md#gopher) - [[contents]](README.md#table-of-contents)
+[[top]](#gopher) - [[contents]](#table-of-contents)
