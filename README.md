@@ -198,7 +198,7 @@ the bug and develop a fix.
 
 ## Authors 
 
-Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs   
+Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs
  ✉ ricardo@gopherlabs.org - Twitter [@ricardojrossi](https://twitter.com/ricardojrossi)
 
 Maintained with care by all its [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
