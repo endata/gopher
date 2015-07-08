@@ -44,7 +44,7 @@
 * Performance &amp; Benchmarks
 * [Roadmap](#roadmap)
 * [Support](#support)
-* Contribution Guide
+* [Contribution Guide](#contribution-guide)
 * [Authors](#authors)
 * [License](#license)
 
@@ -67,6 +67,10 @@ link to godoc
 
 // TODO: roadmap table
 
+### Road to v1.0
+
+// TODO: roadmap table
+
 ## Support
 
 twitter: 
@@ -82,9 +86,9 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 ## Authors 
 
-Created with ♥ by: [Ricardo Rossi](https://github.com/ricardo-rossi) - ✉ ricardo@gopherlabs.org
+Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi) ✉ ricardo@gopherlabs.org
 
-contributions by: 
+[Project Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
 ## License 
 
