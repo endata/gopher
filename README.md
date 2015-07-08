@@ -173,7 +173,7 @@ MIT
 
 Star it, watch it, share it.
 
-[[top]](#)
+[[TOP]](#gopher) - [[TOC]](#[[top]](#gopher))
 
 ```
    _____             
