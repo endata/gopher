@@ -20,7 +20,7 @@
 
 ## Table of Contents
 
-* Overview
+* [Overview](#overview)
 * Features
 * Installation
 * The Basics
