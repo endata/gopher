@@ -164,7 +164,7 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs   
  ✉ ricardo@gopherlabs.org - Twitter [@ricardojrossi](https://twitter.com/ricardojrossi)
 
-Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
+Enhanced with care by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
 
 Built-in Service Providers include the following vendored projects:
 
