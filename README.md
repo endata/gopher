@@ -33,15 +33,15 @@
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
 * [Architecture](#architecture)
-  * IoC Container
-  * Contracts
-  * Facades  
-  * Service Providers
-* Advanced Topics
-  * Creating Service Providers
-  * Custom Bootstrapping 
+  * [IoC Container](#ioc-container)
+  * [Contracts](#contracts)
+  * [Facades](#facades)  
+  * [Service Providers](#service-providers)
+* [Advanced Topics](#advanced-topics)
+  * [Creating Service Providers](#creating-service-providers)
+  * [Custom Bootstrapping](#custom-bootstrapping)
 * [API Documentation](#api-documentation)
-* Performance &amp; Benchmarks
+* [Performance &amp; Benchmarks](#performance--benchmarks)
 * [Roadmap](#roadmap)
 * [Support](#support)
 * [Contribution Guide](#contribution-guide)
