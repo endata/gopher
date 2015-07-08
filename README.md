@@ -160,12 +160,15 @@ not just bug reports. "Bug reports" may also be sent in the form of a
 pull request containing a failing test.
 
 However, if you file a bug report, your [issue](https://github.com/gopherlabs/gopher/issues) should contain a title 
-and a clear description of the issue. You should also include as much 
-relevant information as possible and a code sample that demonstrates the 
-issue. The goal of a bug report is to make it easy for yourself - 
-and others - to replicate the bug and develop a fix.
+and a clear description of the problem. You should also include as much relevant information as possible 
+and a code sample that demonstrates the issue. The goal of a bug report is to make it easy to replicate 
+the bug and develop a fix.
 
-1. Fork it
+### Contributing a Pull Request
+
+1. Fork the appropriate Gopher repository: [gopher](https://github.com/gopherlabs/gopher), 
+[gopher-framework](https://github.com/gopherlabs/gopher-framework), 
+[gopher-services](https://github.com/gopherlabs/gopher-services)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
