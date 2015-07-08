@@ -65,7 +65,7 @@
 
 ## Installation
 
-//TODO
+`go get github.com/gopherlabs/gopher`
 
 # The Basics
 
