@@ -65,17 +65,34 @@
 
 ## Getting Started
 
-Let us create our first server:
+Let us create our first server.
 
-### Install Gopher
+#### Installation
 
-1. Have [Go installed](https://golang.org/dl/).
-2. Have your [GOPATH](http://golang.org/doc/code.html#GOPATH) set.
-3. From your GOPATH, type:
+1. [Install Go](https://golang.org/dl/).
+2. Set your [GOPATH](http://golang.org/doc/code.html#GOPATH).
+3. Then, from your GOPATH, type this to install Gopher and its dependencies:
 
 ```
 go get github.com/gopherlabs/gopher
 ```
+
+#### Create your server.go file
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/gopherlabs/gopher"
+)
+
+
+```
+
+
 
 # The Basics
 
