@@ -148,7 +148,8 @@ link to godoc
 
 ## Support
 
-twitter: 
+  For latest release announcements follow us on Twitter [@gopherweb](https://twitter.com/gopherweb) 
+
 chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Contribution Guide
@@ -184,7 +185,7 @@ Maintained with care by all its [Contributors](https://github.com/gopherlabs/gop
 Built-in Service Providers include the following vendored projects:
 
   * gorilla/mux [gorilla/mux](https://github.com/gorilla/mux)
-  * Sirupsen/logrus [https://github.com/Sirupsen/logrus](https://github.com/Sirupsen/logrus)
+  * sirupsen/logrus [https://github.com/sirupsen/logrus](https://github.com/sirupsen/logrus)
   * unrolled/render [https://github.com/unrolled/render](https://github.com/unrolled/render)
 
 ## License 
