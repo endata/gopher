@@ -69,7 +69,8 @@ link to godoc
 
 ## Support
 
-[![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+twitter: 
+chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Contribution Guide
 
@@ -81,7 +82,7 @@ link to godoc
 
 ## Authors 
 
-created by:  
+Created with ♥ by: [Ricardo Rossi](/ricardo-rossi) - Ricardo@GopherLabs.org
 
 contributions by: 
 
@@ -90,6 +91,8 @@ contributions by:
 MIT
 
 ## Thank you for using Gopher!
+
+Star it, watch it, share it.
 
 ```
    _____             
