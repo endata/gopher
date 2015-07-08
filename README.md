@@ -149,7 +149,7 @@ link to godoc
 ## Support
 
 **Twitter**   
-For the latest Gopher announcements, follow us at [@gopherweb](https://twitter.com/gopherweb) 
+For Gopher announcements, follow us at [@gopherweb](https://twitter.com/gopherweb) 
 
 **Forum**   
 https://groups.google.com/d/forum/gopher-framework
