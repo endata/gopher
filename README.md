@@ -148,14 +148,14 @@ link to godoc
 
 ## Support
 
-**Twitter**   
-For Gopher announcements, follow us at [@gopherweb](https://twitter.com/gopherweb) 
-
 **Forum**   
 https://groups.google.com/d/forum/gopher-framework
 
 **Mailing List**   
 gopher-framework@googlegroups.com
+
+**Twitter**   
+For Gopher announcements, follow us at [@gopherweb](https://twitter.com/gopherweb) 
 
 **Chat**   
 Join the conversation at [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
