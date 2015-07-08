@@ -201,4 +201,4 @@ Star it, watch it, share it.
 
 ```
 
-[[top]](./gopher#gopher) - [[contents]](./gopher#table-of-contents)
+[[top]](/gopherlabs/gopher#gopher) - [[contents]](/gopherlabs/gopher#table-of-contents)
