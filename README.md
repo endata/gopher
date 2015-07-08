@@ -99,6 +99,13 @@ func main() {
 }
 ```
 
+#### Run your server
+
+```
+go run server.go
+```
+
+You will now have a Gopher web server running on localhost:3000.
 
 
 # The Basics
