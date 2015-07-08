@@ -161,7 +161,7 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 ## Authors 
 
-Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs 
+Created with ♥ by [Ricardo Rossi](https://github.com/ricardo-rossi), founder of Gopher Labs   
  ✉ ricardo@gopherlabs.org - Twitter [@ricardojrossi](https://twitter.com/ricardojrossi)
 
 Powered by all [Contributors](https://github.com/gopherlabs/gopher/graphs/contributors) 
