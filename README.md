@@ -73,7 +73,7 @@ Let us create our first server.
 2. Set your [GOPATH](http://golang.org/doc/code.html#GOPATH).
 3. Then, from your GOPATH, type this to install Gopher and its dependencies:
 
-```sh
+```
 go get github.com/gopherlabs/gopher
 ```
 
@@ -89,7 +89,13 @@ import (
 	"github.com/gopherlabs/gopher"
 )
 
-
+func main() {
+  app = gopher.NewApp()
+  r := app.NewRouter()
+  r.Get("/router", func(rw http.ResponseWriter, req *http.Request) {
+    fmt.Fprint(rw, "Hello, Gopher!")
+  })
+}
 ```
 
 
