@@ -19,8 +19,8 @@
 
 * Overview
 * Features
+* Installation
 * The Basics
-  * Installation
   * Routing
   * Handlers
   * Requests
