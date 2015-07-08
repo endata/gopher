@@ -15,6 +15,32 @@
 [![Made with heart](https://img.shields.io/badge/made%20with-%E2%99%A5-orange.svg)](https://github.com/ricardo-rossi)
 [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## Table of Contents
+
+* Overview
+* Features
+* The Basics
+  * Installation
+  * Routing
+  * Handlers
+  * Requests
+  * Middleware
+  * Responses
+  * Logging
+  * Views &amp; Templates
+* Architecture Details
+  * IoC Container
+  * Contracts
+  * Service Providers
+  * Facades  
+* License
+
+
+### Heroic Features
+
+* a
+* b
+
 
 ## Questions / Ideas ?
 
@@ -27,7 +53,6 @@
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
 
 ## Thank you for using Gopher!
 
