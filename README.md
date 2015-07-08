@@ -155,11 +155,11 @@ chat: [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shiel
 
 Thank you for considering contributing to Gopher!
 
-To encourage active collaboration, we strongly encourages pull requests, 
+To encourage active collaboration, we strongly encourage [pull requests](https://github.com/gopherlabs/gopher/pulls), 
 not just bug reports. "Bug reports" may also be sent in the form of a 
 pull request containing a failing test.
 
-However, if you file a bug report, your issue should contain a title 
+However, if you file a bug report, your [issue](https://github.com/gopherlabs/gopher/issues) should contain a title 
 and a clear description of the issue. You should also include as much 
 relevant information as possible and a code sample that demonstrates the 
 issue. The goal of a bug report is to make it easy for yourself - 
