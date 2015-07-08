@@ -140,8 +140,6 @@ link to godoc
 
 ## Roadmap
 
-// TODO: roadmap table
-
 #### Road to v1.0
 
 Feature  | Status
