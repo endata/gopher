@@ -28,11 +28,14 @@
   * Responses
   * Logging
   * Views &amp; Templates
-* Architecture Details
+* Architecture
   * IoC Container
   * Contracts
   * Service Providers
   * Facades  
+* API Documentation
+* Support
+* Contribution Guide
 * License
 
 
