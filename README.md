@@ -54,10 +54,13 @@
 
 ## Heroic Features
 
-* Simplicity: Expressive, *idiomatic* Go API syntax 
-* Magic-less: Extensive framework with no hidden magic, and no reflection
-* Powerful and intuitive request routing
-* b
+* Simple: *Idiomatic* Go API syntax 
+* Clean: No hidden magic, and no reflection
+* Intuitive: Beautiful and clear syntax.
+* Powerful: and intuitive request routing.
+* Extensible: 
+* Fast: Gopher is smoking. See our benchmarks.
+* Comprehensive: Routing, Handlers, Middleware, Logging, Views, and much more..
 
 ## API Documentation
 
