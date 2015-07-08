@@ -22,7 +22,7 @@
 * Installation
 * The Basics
   * Routing
-  * Handlers &amp; Requests
+  * Request Handlers
   * Middleware
   * Application Context
   * Logging
