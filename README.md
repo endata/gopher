@@ -164,7 +164,7 @@ and a clear description of the problem. You should also include as much relevant
 and a code sample that demonstrates the issue. The goal of a bug report is to make it easy to replicate 
 the bug and develop a fix.
 
-### Contributing a Pull Request
+#### Opening a Pull Request
 
 1. Fork the appropriate Gopher repository: [gopher](https://github.com/gopherlabs/gopher), 
 [gopher-framework](https://github.com/gopherlabs/gopher-framework), 
