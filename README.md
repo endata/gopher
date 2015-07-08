@@ -35,8 +35,8 @@
 * Architecture
   * IoC Container
   * Contracts
-  * Service Providers
   * Facades  
+  * Service Providers
 * Advanced Topics
   * Creating Service Providers
   * Custom Bootstrapping 
@@ -53,13 +53,13 @@
 ## Heroic Features
 
 * **Simple**: Straightforward, clean *Idiomatic* Go syntax. 
-* **Intuitive**: Clear and beautiful APIs for maximum coding happiness and productivity.
+* **Intuitive**: Beautiful APIs for maximum coding happiness and productivity.
 * **Exposed**: No reflection or hidden magic. Just clean code.
 * **Modern**: Features an IoC Container, nested Middleware, flexible Routing, and more.
-* **Extensible**: Create new Service Providers or replace any built-in one with your own.
-* **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more..
-* **Fast**: Gopher is blazing fast. See our benchmarks.
-* **Documented**: Thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
+* **Extensible**: Easy to add a new Service Providers or to replace a built-in one.
+* **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more.
+* **Speedy**: Gopher is blazing fast. See our benchmarks.
+* **Documented**: APIs are thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
 
 ## Installation
 
@@ -70,30 +70,69 @@
 //TODO
 
 ## Routing
+
+//TODO
+
 ## Request Handlers
+
+//TODO
+
 ## Middleware
+
+//TODO
+
 ## Application Context
+
+//TODO
+
 ## Logging
+
+//TODO
+
 ## Views &amp; Templates
+
+//TODO
+
 ## Responses
+
+//TODO
 
 # Architecture
 
+//TODO
+
 ## IoC Container
+
+//TODO
+
 ## Contracts
-## Service Providers
+
+//TODO
+
 ## Facades  
+
+//TODO
+
+## Service Providers
+
+//TODO
 
 # Advanced Topics
 
+//TODO
+
 ## Creating Service Providers
+
+//TODO
+
 ## Custom Bootstrapping 
-  
+
+//TODO
 
 ## API Documentation
 
+//TODO
 link to godoc
-
 
 ## Performance &amp; Benchmarks
 
