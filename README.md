@@ -173,7 +173,7 @@ MIT
 
 Star it, watch it, share it.
 
-[top](#)
+[[top]](#)
 
 ```
    _____             
