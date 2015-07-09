@@ -153,7 +153,7 @@ app := gopher.NewApp()
 
 This creates an instance of your application's container, which is the entry point to the Gopher framework. 
 From the *app* instance, we have access to all its *Service Providers* such as the *Router*, *Logger*, *Renderer*, etc. 
-We also have access to the application's *Context*, as well as mechanisms for adding custom *Middleware*, as we will
+From there we also have access to the application's *Context*, as well as mechanisms for adding custom *Middleware*, as we will
 see in the next few sections.
 
 ## Routing
