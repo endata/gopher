@@ -139,8 +139,6 @@ Next, let's take a look at some basic APIs in the following section:
 
 # The Basics
 
-//TODO
-
 ## Routing
 
 //TODO
