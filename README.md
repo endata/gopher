@@ -164,6 +164,23 @@ see in the next few sections.
 router := app.NewRouter()
 ```
 
+
+```go
+func(rw http.ResponseWriter, req *http.Request)
+```
+
+#### Registering A Route For Multiple Verbs
+
+Sometimes you may need to register a route that responds to multiple HTTP verbs. 
+
+You may do so using the [*Match()*](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade.Match) 
+method of the [Route Facade](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade) as shown 
+on this example:
+
+```go
+r.Match("/verbs", MyHandler, []string{"GET", "POST", "DELETE"}, MyAppMiddleWareRouteHanlder)
+```
+
 ## Request Handlers
 
 //TODO
