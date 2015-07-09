@@ -160,6 +160,10 @@ see in the next few sections.
 
 //TODO
 
+```go
+router := app.NewRouter()
+```
+
 ## Request Handlers
 
 //TODO
