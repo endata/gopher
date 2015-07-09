@@ -168,6 +168,9 @@ router := app.NewRouter()
 ```go
 func(rw http.ResponseWriter, req *http.Request)
 ```
+#### Routes
+
+
 
 #### Registering A Route For Multiple Verbs
 
@@ -178,7 +181,13 @@ method of the [Route Facade](https://godoc.org/github.com/gopherlabs/gopher-fram
 on this example:
 
 ```go
-r.Match("/verbs", MyHandler, []string{"GET", "POST", "DELETE"}, MyAppMiddleWareRouteHanlder)
+router.Match("/users", MyHandler, []string{"GET", "POST", "DELETE"}, MyAppMiddleWareRouteHanlder)
+```
+
+Or, you may even register a route that responds to all HTTP verbs using the any method:
+
+```go
+router.All("/products", MyHandler)
 ```
 
 ## Request Handlers
