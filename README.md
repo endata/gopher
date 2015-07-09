@@ -151,9 +151,9 @@ As you may have noticed in the "Hello, Gopher!" example above, the very first li
 app := gopher.NewApp()
 ```
 
-This creates an instance of the app container, which is the entry point to the framework. 
-From the *app* instance, we have access to all its Service Providers such as the Router, Logger, Renderer, etc. 
-We also have access to the application's Context, as well as mechanisms for adding custom Middleware, as we will
+This creates an instance of the application's container, which is the entry point to the framework. 
+From the *app* instance, we have access to all its *Service Providers* such as the *Router*, *Logger*, *Renderer*, etc. 
+We also have access to the application's *Context*, as well as mechanisms for adding custom *Middleware*, as we will
 see in the next few sections.
 
 ## Routing
