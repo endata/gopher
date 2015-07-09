@@ -95,7 +95,7 @@ func main() {
 	r.Serve()
 }
 ```
-See example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
+See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
 
 #### Run your server
 
