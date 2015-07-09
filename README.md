@@ -99,7 +99,7 @@ func main() {
 
 #### Run your server
 
-```
+```shell
 go run server.go
 ```
 
