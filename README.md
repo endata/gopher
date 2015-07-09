@@ -66,7 +66,7 @@
 
 ## Getting Started
 
-Let's create our first "Hello, Gopher! server.
+Let's create our first "Hello, Gopher!" example.
 
 #### 1. Install Gopher
 
@@ -137,13 +137,19 @@ curl http://localhost:3000/
 Hello, Gopher!
 ```
 **Awesome, it worked!**   
-Next, let's take a look at some basic APIs in the following section:
+Next, let's take a look at some useful APIs in the following section:
 
 # The Basics
 
 ## The App Container
 
-//TODO
+As you may have noticed in the "Hello, Gopher!" example above, the very first line inside the 
+main() function creates a new app instance like this:
+
+```
+app := gopher.NewApp()
+```
+
 
 ## Routing
 
