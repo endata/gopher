@@ -133,7 +133,7 @@ INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|
 #### 4. Now, try it!
 
 ```shell
-**curl http://localhost:3000/**
+curl http://localhost:3000/
 Hello, Gopher!
 ```
 Awesome, it worked!   
