@@ -25,6 +25,7 @@
 * [Heroic Features](#heroic-features)
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
+  * [The App Container](#the-app-container)
   * [Routing](#routing)
   * [Request Handlers](#request-handlers)
   * [Middleware](#middleware)
@@ -88,11 +89,12 @@ import (
 )
 
 func main() {
-	r := gopher.NewApp().NewRouter()
-	r.Get("/", func(rw http.ResponseWriter, req *http.Request) {
+	app := gopher.NewApp()
+	router := app.NewRouter()
+	router.Get("/", func(rw http.ResponseWriter, req *http.Request) {
 		fmt.Fprintln(rw, "Hello, Gopher!")
 	})
-	r.Serve()
+	router.Serve()
 }
 ```
 See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
@@ -138,6 +140,10 @@ Hello, Gopher!
 Next, let's take a look at some basic APIs in the following section:
 
 # The Basics
+
+## The App Container
+
+//TODO
 
 ## Routing
 
