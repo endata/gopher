@@ -65,7 +65,7 @@
 
 ## Getting Started
 
-Let us create our first "Hello, Gopher! server.
+Let's create our first "Hello, Gopher! server.
 
 #### Installation
 
@@ -128,10 +128,14 @@ INFO[2015-07-08T20:39:35-05:00] | GOPHER READY FOR ACTION ON PORT 3000
 INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|  
 ```
 
+#### Test the route
+
 ```shell
-
+curl http://localhost:3000/
+Hello, Gopher!
 ```
-
+Awesome, it worked! 
+Next, let's take a look at some basic APIs in the following section:
 
 # The Basics
 
