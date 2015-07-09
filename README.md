@@ -67,7 +67,7 @@
 
 Let's create our first "Hello, Gopher! server.
 
-#### Installation
+#### 1. Install Gopher
 
 1. [Install Go](https://golang.org/dl/) and set your [GOPATH](http://golang.org/doc/code.html#GOPATH) (if you haven't already).
 2. Then, from your GOPATH, type this to install Gopher and its dependencies:
@@ -76,7 +76,7 @@ Let's create our first "Hello, Gopher! server.
 go get github.com/gopherlabs/gopher
 ```
 
-#### Create your server.go file
+#### 2. Create your server.go file
 
 ```go
 package main
@@ -97,7 +97,7 @@ func main() {
 ```
 See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
 
-#### Run your server
+#### 3. Run your server
 
 ```shell
 go run server.go
@@ -128,14 +128,13 @@ INFO[2015-07-08T20:39:35-05:00] | GOPHER READY FOR ACTION ON PORT 3000
 INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|  
 ```
 
-#### Now, test the route
+#### 4. Now, try it!
 
 ```shell
 curl http://localhost:3000/
 Hello, Gopher!
 ```
-Awesome, it worked!
-
+**Awesome, it worked!**   
 Next, let's take a look at some basic APIs in the following section:
 
 # The Basics
