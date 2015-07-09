@@ -136,19 +136,23 @@ INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|
 curl http://localhost:3000/
 Hello, Gopher!
 ```
-**Awesome, it worked!**   
-Next, let's take a look at some useful APIs in the following section:
+Awesome, it worked!   
+Next, let's take a look at some more useful APIs in the following sections:
 
 # The Basics
 
 ## The App Container
 
 As you may have noticed in the "Hello, Gopher!" example above, the very first line inside the 
-main() function creates a new app instance like this:
+main() function created a new *app* instance like this:
 
 ```
 app := gopher.NewApp()
 ```
+
+This creates an instance of the app container, which is the entry point to the framework. 
+
+
 
 
 ## Routing
