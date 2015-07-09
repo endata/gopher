@@ -170,7 +170,7 @@ func(rw http.ResponseWriter, req *http.Request)
 ```
 #### Routes
 
-
+Get(), Post(), etc..
 
 #### Registering A Route For Multiple Verbs
 
