@@ -134,7 +134,8 @@ INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|
 curl http://localhost:3000/
 Hello, Gopher!
 ```
-Awesome, it worked! 
+Awesome, it worked!
+
 Next, let's take a look at some basic APIs in the following section:
 
 # The Basics
