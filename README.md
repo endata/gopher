@@ -184,7 +184,8 @@ on this example:
 router.Match("/users", MyHandler, []string{"GET", "POST", "DELETE"}, MyAppMiddleWareRouteHanlder)
 ```
 
-Or, you may even register a route that responds to all HTTP verbs using the any method:
+Or, you may even register a route that responds to all HTTP verbs using the 
+[*All()*](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade.All) method:
 
 ```go
 router.All("/products", MyHandler)
