@@ -96,6 +96,7 @@ func main() {
 	r.Serve()
 }
 ```
+See example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
 
 #### Run your server
 
@@ -103,7 +104,8 @@ func main() {
 go run server.go
 ```
 
-You will now have a Gopher web server running on localhost:3000 (default port).
+You will now have a Gopher web server running on localhost:3000 (default port) and you should 
+see the following output:
 
 ```shell
 INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|   
@@ -127,6 +129,9 @@ INFO[2015-07-08T20:39:35-05:00] | GOPHER READY FOR ACTION ON PORT 3000
 INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|  
 ```
 
+```shell
+
+```
 
 
 # The Basics
