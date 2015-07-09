@@ -128,7 +128,7 @@ INFO[2015-07-08T20:39:35-05:00] | GOPHER READY FOR ACTION ON PORT 3000
 INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|  
 ```
 
-#### Test the route
+#### Now, test the route
 
 ```shell
 curl http://localhost:3000/
