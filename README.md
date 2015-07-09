@@ -65,7 +65,7 @@
 
 ## Getting Started
 
-Let us create our first server.
+Let us create our first "Hello, Gopher! server.
 
 #### Installation
 
