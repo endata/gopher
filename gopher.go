@@ -13,21 +13,33 @@ const (
 	SAMPLE   = framework.SAMPLE
 )
 
-func NewApp(config ...framework.Config) *framework.Container {
+var (
+	Log    framework.Loggable
+	Router framework.Routable
+)
+
+func Initialize(config ...framework.Config) *framework.Container {
 	appConf := framework.Config{}
 	if len(config) > 0 {
 		appConf = config[0]
 	}
 	container := framework.NewContainer(appConf)
-	registerProviders(container)
 	container.Use(framework.LoggerMiddleware)
+	registerProviders(container)
 	return container
 }
 
-func registerProviders(container *framework.Container) {
-	container.RegisterProvider(new(services.LogProvider))
-	container.RegisterProvider(new(services.MapProvider))
-	container.RegisterProvider(new(services.RouteProvider))
-	container.RegisterProvider(new(services.ParameterProvider))
-	container.RegisterProvider(new(services.RenderProvider))
+func registerProviders(c *framework.Container) {
+	c.RegisterProvider(new(services.LogProvider))
+	Log = c.Log
+
+	c.RegisterProvider(new(services.RouteProvider))
+	Router = c.Router
+
+	c.RegisterProvider(new(services.ParameterProvider))
+	c.RegisterProvider(new(services.RenderProvider))
+}
+
+func ListenAndServe() {
+	Router.Serve()
 }
