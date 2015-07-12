@@ -20,24 +20,19 @@ var (
 )
 
 func Log() Loggable {
-	if log == nil {
-		initialize()
-	}
 	return log
 }
 
 func Router() Routable {
-	if router == nil {
-		initialize()
-	}
 	return router
 }
 
 func Context() Mappable {
-	if context == nil {
-		initialize()
-	}
 	return context
+}
+
+func init() {
+	initialize()
 }
 
 func initialize(config ...Config) *Container {
