@@ -1,45 +1,66 @@
 package gopher
 
 import (
-	"github.com/gopherlabs/gopher-framework"
+	. "github.com/gopherlabs/gopher-framework"
 	"github.com/gopherlabs/gopher-services"
 )
 
-const (
-	LOGGER   = framework.LOGGER
-	ROUTER   = framework.ROUTER
-	RENDERER = framework.RENDERER
-	PARAMS   = framework.PARAMS
-	SAMPLE   = framework.SAMPLE
-)
+//const (
+//	LOGGER   = framework.LOGGER
+//	ROUTER   = framework.ROUTER
+//	RENDERER = framework.RENDERER
+//	PARAMS   = framework.PARAMS
+//	SAMPLE   = framework.SAMPLE
+//)
 
 var (
-	Log     framework.Loggable
-	Router  framework.Routable
-	Context framework.Mappable
+	log     Loggable
+	router  Routable
+	context Mappable
 )
 
-func Initialize(config ...framework.Config) *framework.Container {
-	appConf := framework.Config{}
+func Log() Loggable {
+	if log == nil {
+		initialize()
+	}
+	return log
+}
+
+func Router() Routable {
+	if router == nil {
+		initialize()
+	}
+	return router
+}
+
+func Context() Mappable {
+	if context == nil {
+		initialize()
+	}
+	return context
+}
+
+func initialize(config ...Config) *Container {
+	appConf := Config{}
 	if len(config) > 0 {
 		appConf = config[0]
 	}
-	container := framework.NewContainer(appConf)
-	container.Use(framework.LoggerMiddleware)
+	container := NewContainer(appConf)
+	container.Use(LoggerMiddleware)
 	registerProviders(container)
 	return container
 }
 
-func registerProviders(c *framework.Container) {
+func registerProviders(c *Container) {
 
 	c.RegisterProvider(new(services.LogProvider))
-	Log = c.Log
+	log = c.Log
 
 	c.RegisterProvider(new(services.MapProvider))
-	Context = c.Context
+	context = c.Context
 
 	c.RegisterProvider(new(services.RouteProvider))
-	Router = c.Router
+	router = c.Router
 
 	c.RegisterProvider(new(services.ParameterProvider))
 
@@ -47,5 +68,5 @@ func registerProviders(c *framework.Container) {
 }
 
 func ListenAndServe() {
-	Router.Serve()
+	router.Serve()
 }
