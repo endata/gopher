@@ -14,8 +14,9 @@ const (
 )
 
 var (
-	Log    framework.Loggable
-	Router framework.Routable
+	Log     framework.Loggable
+	Router  framework.Routable
+	Context framework.Mappable
 )
 
 func Initialize(config ...framework.Config) *framework.Container {
@@ -30,13 +31,18 @@ func Initialize(config ...framework.Config) *framework.Container {
 }
 
 func registerProviders(c *framework.Container) {
+
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
+
+	c.RegisterProvider(new(services.MapProvider))
+	Context = c.Context
 
 	c.RegisterProvider(new(services.RouteProvider))
 	Router = c.Router
 
 	c.RegisterProvider(new(services.ParameterProvider))
+
 	c.RegisterProvider(new(services.RenderProvider))
 }
 
