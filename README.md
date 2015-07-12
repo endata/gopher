@@ -1,5 +1,5 @@
 # Gopher
-> Gopher is a modern, light weight, and extensible web framework for GO
+> Gopher is a modern, light weight, and extensible web framework for Go
 
 [![Build Status](https://travis-ci.org/gopherlabs/gopher.svg)](https://travis-ci.org/gopherlabs/gopher)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
