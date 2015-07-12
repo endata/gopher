@@ -26,6 +26,7 @@ func NewApp(config ...framework.Config) *framework.Container {
 
 func registerProviders(container *framework.Container) {
 	container.RegisterProvider(new(services.LogProvider))
+	container.RegisterProvider(new(services.MapProvider))
 	container.RegisterProvider(new(services.RouteProvider))
 	container.RegisterProvider(new(services.ParameterProvider))
 	container.RegisterProvider(new(services.RenderProvider))
