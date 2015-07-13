@@ -14,22 +14,10 @@ import (
 //)
 
 var (
-	log     Loggable
-	router  Routable
-	context Mappable
+	Log     Loggable
+	Router  Routable
+	Context Mappable
 )
-
-func Log() Loggable {
-	return log
-}
-
-func Router() Routable {
-	return router
-}
-
-func Context() Mappable {
-	return context
-}
 
 func init() {
 	initialize()
@@ -49,13 +37,13 @@ func initialize(config ...Config) *Container {
 func registerProviders(c *Container) {
 
 	c.RegisterProvider(new(services.LogProvider))
-	log = c.Log
+	Log = c.Log
 
 	c.RegisterProvider(new(services.MapProvider))
-	context = c.Context
+	Context = c.Context
 
 	c.RegisterProvider(new(services.RouteProvider))
-	router = c.Router
+	Router = c.Router
 
 	c.RegisterProvider(new(services.ParameterProvider))
 
@@ -63,5 +51,5 @@ func registerProviders(c *Container) {
 }
 
 func ListenAndServe() {
-	router.Serve()
+	Router.Serve()
 }
