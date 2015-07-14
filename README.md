@@ -83,18 +83,15 @@ go get github.com/gopherlabs/gopher
 package main
 
 import (
-	"fmt"
 	"net/http"
-	"github.com/gopherlabs/gopher"
+	. "github.com/gopherlabs/gopher"
 )
 
 func main() {
-	app := gopher.NewApp()
-	router := app.NewRouter()
-	router.Get("/", func(rw http.ResponseWriter, req *http.Request) {
-		fmt.Fprintln(rw, "Hello, Gopher!")
+	Router.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		Render.Text(w, "Hello, Gopher!")
 	})
-	router.Serve()
+	ListenAndServe()
 }
 ```
 See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
