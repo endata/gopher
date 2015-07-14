@@ -25,7 +25,6 @@
 * [Heroic Features](#heroic-features)
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
-  * [The App Container](#the-app-container)
   * [Routing](#routing)
   * [Request Handlers](#request-handlers)
   * [Middleware](#middleware)
@@ -106,25 +105,27 @@ You will now have a Gopher web server running on localhost:3000 (default port) a
 see the following output:
 
 ```shell
-INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|   
-INFO[2015-07-08T20:39:35-05:00] | LOADING SERVICE PROVIDERS ...              
-INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|   
-INFO[2015-07-08T20:39:35-05:00] | * LOGGER ✓                                 
-INFO[2015-07-08T20:39:35-05:00] | * ROUTER ✓                                 
-INFO[2015-07-08T20:39:35-05:00] | * PARAMS ✓                                 
-INFO[2015-07-08T20:39:35-05:00] | * RENDERER ✓                               
-INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|   
-INFO[2015-07-08T20:39:35-05:00] |    _____                                   
-INFO[2015-07-08T20:39:35-05:00] |   / ____|           | |                    
-INFO[2015-07-08T20:39:35-05:00] |  | |  __  ___  _ __ | |__   ___ _ __       
-INFO[2015-07-08T20:39:35-05:00] |  | | |_ |/ _ \| '_ \| '_ \ / _ \ '__|      
-INFO[2015-07-08T20:39:35-05:00] |  | |__| | (_) | |_) | | | |  __/ |         
-INFO[2015-07-08T20:39:35-05:00] |   \_____|\___/| .__/|_| |_|\___|_|         
-INFO[2015-07-08T20:39:35-05:00] |               | |                          
-INFO[2015-07-08T20:39:35-05:00] |               |_|                          
-INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|   
-INFO[2015-07-08T20:39:35-05:00] | GOPHER READY FOR ACTION ON PORT 3000        
-INFO[2015-07-08T20:39:35-05:00] |----------------------------------------|  
+INFO[0000] |----------------------------------------|   
+INFO[0000] | LOADING SERVICE PROVIDERS ...              
+INFO[0000] |----------------------------------------|   
+INFO[0000] | * LOGGER ✓                                 
+INFO[0000] | * MAPPER ✓                                 
+INFO[0000] | * ROUTER ✓                                 
+INFO[0000] | * PARAMS ✓                                 
+INFO[0000] | * RENDERER ✓                                                     
+INFO[0000] |----------------------------------------|   
+INFO[0000] |    _____                                   
+INFO[0000] |   / ____|           | |                    
+INFO[0000] |  | |  __  ___  _ __ | |__   ___ _ __       
+INFO[0000] |  | | |_ |/ _ \| '_ \| '_ \ / _ \ '__|      
+INFO[0000] |  | |__| | (_) | |_) | | | |  __/ |         
+INFO[0000] |   \_____|\___/| .__/|_| |_|\___|_|         
+INFO[0000] |               | |                          
+INFO[0000] |               |_|                          
+INFO[0000] |----------------------------------------|   
+INFO[0000] | GOPHER READY FOR ACTION ON PORT 3000             
+INFO[0000] |----------------------------------------|   
+ 
 ```
 
 #### 4. Now, try it!
@@ -138,20 +139,6 @@ Awesome, it worked!
 Next, let's take a look at some more useful APIs in the following sections:
 
 # The Basics
-
-## The App Container
-
-As you may have noticed in the "Hello, Gopher!" example above, the very first line inside the 
-*main()* function created a new *app* instance like this:
-
-```go
-app := gopher.NewApp()
-```
-
-This creates an instance of your application's container, which is the entry point to the Gopher framework. 
-From the *app* instance, we have access to all its *Service Providers* such as the *Router*, *Logger*, *Renderer*, etc. 
-From there we also have access to the application's *Context*, as well as mechanisms for adding custom *Middleware*, as we will
-see in the next few sections.
 
 ## Routing
 
