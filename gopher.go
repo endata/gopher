@@ -17,6 +17,7 @@ var (
 	Log     Loggable
 	Router  Routable
 	Context Mappable
+	Render  Renderable
 )
 
 func init() {
@@ -48,6 +49,7 @@ func registerProviders(c *Container) {
 	c.RegisterProvider(new(services.ParameterProvider))
 
 	c.RegisterProvider(new(services.RenderProvider))
+	Render = c.Render
 }
 
 func ListenAndServe() {
