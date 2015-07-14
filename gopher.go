@@ -14,30 +14,43 @@ var (
 	Render  f.Renderable
 )
 
-func init() {
-	Config()
+type app struct {
+	ctnr     *f.Container
+	LOGGER   string
+	ROUTER   string
+	RENDERER string
+	PARAMS   string
+	SAMPLE   string
 }
 
-func Config(config ...f.Config) {
-	appConf := f.Config{}
-	if len(config) > 0 {
-		appConf = config[0]
-	}
-	c = f.NewContainer(appConf)
-	c.Use(f.LoggerMiddleware)
-	registerProviders()
+func init() {
 	initApp()
+	App.Config()
 }
 
 func initApp() {
 	app := new(app)
-	app.ctnr = c
 	app.LOGGER = f.LOGGER
 	app.ROUTER = f.ROUTER
 	app.RENDERER = f.RENDERER
 	app.PARAMS = f.PARAMS
 	app.SAMPLE = f.SAMPLE
 	App = app
+}
+
+func (m *app) Config(config ...f.Config) {
+	appConf := f.Config{}
+	if len(config) > 0 {
+		appConf = config[0]
+	}
+	c = f.NewContainer(appConf)
+	App.ctnr = c
+	c.Use(f.LoggerMiddleware)
+	registerProviders()
+}
+
+func (m *app) Use(mw f.MiddlewareHandler, args ...interface{}) {
+	m.ctnr.Use(mw, args...)
 }
 
 func registerProviders() {
@@ -55,19 +68,6 @@ func registerProviders() {
 
 	c.RegisterProvider(new(services.RenderProvider))
 	Render = c.Render
-}
-
-type app struct {
-	ctnr     *f.Container
-	LOGGER   string
-	ROUTER   string
-	RENDERER string
-	PARAMS   string
-	SAMPLE   string
-}
-
-func (m *app) Use(mw f.MiddlewareHandler, args ...interface{}) {
-	m.ctnr.Use(mw, args...)
 }
 
 func ListenAndServe() {
