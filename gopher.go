@@ -1,7 +1,7 @@
 package gopher
 
 import (
-	. "github.com/gopherlabs/gopher-framework"
+	f "github.com/gopherlabs/gopher-framework"
 	"github.com/gopherlabs/gopher-services"
 )
 
@@ -14,28 +14,28 @@ import (
 //)
 
 var (
-	Log     Loggable
-	Router  Routable
-	Context Mappable
-	Render  Renderable
+	Log     f.Loggable
+	Router  f.Routable
+	Context f.Mappable
+	Render  f.Renderable
 )
 
 func init() {
 	initialize()
 }
 
-func initialize(config ...Config) *Container {
-	appConf := Config{}
+func initialize(config ...f.Config) *f.Container {
+	appConf := f.Config{}
 	if len(config) > 0 {
 		appConf = config[0]
 	}
-	container := NewContainer(appConf)
-	container.Use(LoggerMiddleware)
+	container := f.NewContainer(appConf)
+	container.Use(f.LoggerMiddleware)
 	registerProviders(container)
 	return container
 }
 
-func registerProviders(c *Container) {
+func registerProviders(c *f.Container) {
 
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
