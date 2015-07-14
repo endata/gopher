@@ -5,14 +5,6 @@ import (
 	"github.com/gopherlabs/gopher-services"
 )
 
-//const (
-//	LOGGER   = framework.LOGGER
-//	ROUTER   = framework.ROUTER
-//	RENDERER = framework.RENDERER
-//	PARAMS   = framework.PARAMS
-//	SAMPLE   = framework.SAMPLE
-//)
-
 var (
 	c       *f.Container
 	App     *app
@@ -34,9 +26,17 @@ func Config(config ...f.Config) {
 	c = f.NewContainer(appConf)
 	c.Use(f.LoggerMiddleware)
 	registerProviders()
+	initApp()
+}
 
+func initApp() {
 	app := new(app)
 	app.ctnr = c
+	app.LOGGER = f.LOGGER
+	app.ROUTER = f.ROUTER
+	app.RENDERER = f.RENDERER
+	app.PARAMS = f.PARAMS
+	app.SAMPLE = f.SAMPLE
 	App = app
 }
 
@@ -58,7 +58,12 @@ func registerProviders() {
 }
 
 type app struct {
-	ctnr *f.Container
+	ctnr     *f.Container
+	LOGGER   string
+	ROUTER   string
+	RENDERER string
+	PARAMS   string
+	SAMPLE   string
 }
 
 func (m *app) Use(mw f.MiddlewareHandler, args ...interface{}) {
