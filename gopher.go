@@ -71,5 +71,5 @@ func registerProviders() {
 }
 
 func ListenAndServe() {
-	Router.Serve()
+	Router.(f.Servable).Serve()
 }
