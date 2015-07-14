@@ -104,7 +104,7 @@ go run server.go
 You will now have a Gopher web server running on localhost:3000 (default port) and you should 
 see the following output:
 
-```shell
+```awk
 INFO[0000] |----------------------------------------|   
 INFO[0000] | LOADING SERVICE PROVIDERS ...              
 INFO[0000] |----------------------------------------|   
