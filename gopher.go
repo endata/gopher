@@ -21,10 +21,10 @@ var (
 )
 
 func init() {
-	initialize()
+	Config()
 }
 
-func initialize(config ...f.Config) *f.Container {
+func Config(config ...f.Config) *f.Container {
 	appConf := f.Config{}
 	if len(config) > 0 {
 		appConf = config[0]
