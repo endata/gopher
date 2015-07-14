@@ -14,28 +14,33 @@ import (
 //)
 
 var (
-	Log     f.Loggable
-	Router  f.Routable
-	Context f.Mappable
-	Render  f.Renderable
+	c          *f.Container
+	Middleware *middleware
+	Log        f.Loggable
+	Router     f.Routable
+	Context    f.Mappable
+	Render     f.Renderable
 )
 
 func init() {
 	Config()
 }
 
-func Config(config ...f.Config) *f.Container {
+func Config(config ...f.Config) {
 	appConf := f.Config{}
 	if len(config) > 0 {
 		appConf = config[0]
 	}
-	container := f.NewContainer(appConf)
-	container.Use(f.LoggerMiddleware)
-	registerProviders(container)
-	return container
+	c = f.NewContainer(appConf)
+	c.Use(f.LoggerMiddleware)
+	registerProviders()
 }
 
-func registerProviders(c *f.Container) {
+func registerProviders() {
+
+	mware := new(middleware)
+	mware.ctnr = c
+	Middleware = mware
 
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
@@ -50,6 +55,14 @@ func registerProviders(c *f.Container) {
 
 	c.RegisterProvider(new(services.RenderProvider))
 	Render = c.Render
+}
+
+type middleware struct {
+	ctnr *f.Container
+}
+
+func (m *middleware) Use(mw f.MiddlewareHandler, args ...interface{}) {
+	m.ctnr.Use(mw, args...)
 }
 
 func ListenAndServe() {
