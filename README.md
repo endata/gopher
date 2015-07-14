@@ -136,7 +136,7 @@ Hello, Gopher!
 ```
 Awesome, it worked!   
 
-Next, let's take a look at some more useful APIs in the following sections:
+Next, let's take a look at some useful APIs:
 
 # The Basics
 
