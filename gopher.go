@@ -14,12 +14,12 @@ import (
 //)
 
 var (
-	c          *f.Container
-	Middleware *middleware
-	Log        f.Loggable
-	Router     f.Routable
-	Context    f.Mappable
-	Render     f.Renderable
+	c       *f.Container
+	App     *app
+	Log     f.Loggable
+	Router  f.Routable
+	Context f.Mappable
+	Render  f.Renderable
 )
 
 func init() {
@@ -34,13 +34,13 @@ func Config(config ...f.Config) {
 	c = f.NewContainer(appConf)
 	c.Use(f.LoggerMiddleware)
 	registerProviders()
+
+	app := new(app)
+	app.ctnr = c
+	App = app
 }
 
 func registerProviders() {
-
-	mware := new(middleware)
-	mware.ctnr = c
-	Middleware = mware
 
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
@@ -57,11 +57,11 @@ func registerProviders() {
 	Render = c.Render
 }
 
-type middleware struct {
+type app struct {
 	ctnr *f.Container
 }
 
-func (m *middleware) Use(mw f.MiddlewareHandler, args ...interface{}) {
+func (m *app) Use(mw f.MiddlewareHandler, args ...interface{}) {
 	m.ctnr.Use(mw, args...)
 }
 
