@@ -19,7 +19,6 @@ type app struct {
 	LOGGER   string
 	ROUTER   string
 	RENDERER string
-	PARAMS   string
 }
 
 func init() {
@@ -32,7 +31,6 @@ func initApp() {
 	app.LOGGER = f.LOGGER
 	app.ROUTER = f.ROUTER
 	app.RENDERER = f.RENDERER
-	app.PARAMS = f.PARAMS
 	App = app
 }
 
@@ -52,18 +50,12 @@ func (m *app) Use(mw f.MiddlewareHandler, args ...interface{}) {
 }
 
 func registerProviders() {
-
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
-
 	c.RegisterProvider(new(services.MapProvider))
 	Context = c.Context
-
 	c.RegisterProvider(new(services.RouteProvider))
 	Route = c.Route
-
-	c.RegisterProvider(new(services.ParameterProvider))
-
 	c.RegisterProvider(new(services.RenderProvider))
 	Render = c.Render
 }
