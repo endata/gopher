@@ -9,7 +9,7 @@ var (
 	c       *f.Container
 	App     *app
 	Log     f.Loggable
-	Router  f.Routable
+	Route   f.Routable
 	Context f.Mappable
 	Render  f.Renderable
 )
@@ -62,7 +62,7 @@ func registerProviders() {
 	Context = c.Context
 
 	c.RegisterProvider(new(services.RouteProvider))
-	Router = c.Router
+	Route = c.Route
 
 	c.RegisterProvider(new(services.ParameterProvider))
 
@@ -71,5 +71,5 @@ func registerProviders() {
 }
 
 func ListenAndServe() {
-	Router.(f.Servable).Serve()
+	Route.(f.Servable).Serve()
 }
