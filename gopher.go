@@ -20,7 +20,6 @@ type app struct {
 	ROUTER   string
 	RENDERER string
 	PARAMS   string
-	SAMPLE   string
 }
 
 func init() {
