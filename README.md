@@ -145,11 +145,6 @@ Next, let's take a look at some useful APIs:
 //TODO
 
 ```go
-router := app.NewRouter()
-```
-
-
-```go
 func(rw http.ResponseWriter, req *http.Request)
 ```
 #### Routes
