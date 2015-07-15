@@ -34,7 +34,6 @@ func initApp() {
 	app.ROUTER = f.ROUTER
 	app.RENDERER = f.RENDERER
 	app.PARAMS = f.PARAMS
-	app.SAMPLE = f.SAMPLE
 	App = app
 }
 
