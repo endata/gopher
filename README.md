@@ -43,6 +43,7 @@
 * [API Documentation](#api-documentation)
 * [Performance &amp; Benchmarks](#performance--benchmarks)
 * [Roadmap](#roadmap)
+* [Frequently Asked Questions](#frequently-asked-questions)
 * [Support](#support)
 * [Contribution Guide](#contribution-guide)
 * [Authors](#authors)
@@ -275,6 +276,10 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 - [ ] Hashing
 - [ ] Authentication
 - [ ] Queues? 
+
+## Frequently Asked Questions
+
+// TODO
 
 ## Support
 
