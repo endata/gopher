@@ -253,6 +253,12 @@ router.All("/products", MyHandler)
 - [ ] Authentication
 - [ ] Queues? 
 
+#### v3.0 (Target Release H1 2016)
+
+- [ ] Micro-Gopher Docker Containers
+- [ ] Health &amp; Service Instrumentation
+- [ ] LTS Support Options
+
 ## Frequently Asked Questions
 
 // TODO
