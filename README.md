@@ -30,6 +30,12 @@ INFO[0000] |----------------------------------------|
 INFO[0000] | GOPHER READY FOR ACTION ON PORT 3000             
 INFO[0000] |----------------------------------------|   
 ```
+```awk
+```shell
+curl http://localhost:3000/
+Hello, Gopher!
+```
+```
 
 ## Table of Contents
 
