@@ -148,7 +148,7 @@ Hello, Gopher!
 ```
 Awesome, it worked!   
 
-Next, let's take a look at some useful APIs:
+Next, let's take a look at some of the basic concepts of Gopher:
 
 # The Basics
 
