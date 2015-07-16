@@ -26,9 +26,8 @@
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
   * [Routing](#routing)
-  * [Request Handlers](#request-handlers)
   * [Middleware](#middleware)
-  * [Application Context](#application-context)
+  * [Context](#context)
   * [Logging](#logging)
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
@@ -147,6 +146,11 @@ func(rw http.ResponseWriter, req *http.Request)
 
 Get(), Post(), etc..
 
+#### Request Handlers
+
+//
+
+
 #### Registering A Route For Multiple Verbs
 
 Sometimes you may need to register a route that responds to multiple HTTP verbs. 
@@ -175,16 +179,11 @@ router.All("/products", MyHandler)
 //TODO
 
 
-
-## Request Handlers
-
-//TODO
-
 ## Middleware
 
 //TODO
 
-## Application Context
+## Context
 
 //TODO
 
