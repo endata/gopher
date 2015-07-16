@@ -37,9 +37,11 @@
   * [Contracts](#contracts)
   * [Facades](#facades)  
   * [Service Providers](#service-providers)  
-<!--- * [Advanced Topics](#advanced-topics)
+<!---
+* [Advanced Topics](#advanced-topics)
   * [Creating Service Providers](#creating-service-providers)
-  * [Custom Bootstrapping](#custom-bootstrapping) --->
+  * [Custom Bootstrapping](#custom-bootstrapping) 
+-->
 * [API Documentation](#api-documentation)
 * [Performance &amp; Benchmarks](#performance--benchmarks)
 * [Roadmap](#roadmap)
