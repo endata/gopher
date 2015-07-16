@@ -245,31 +245,25 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 
 ## Roadmap
 
-#### Road to v1.0
+#### v1.0 (Target 08/31)
 
+- [ ] Complete GitHub Documentation  
+- [ ] Complete GoDoc Documentation  
+- [ ] Benchmarks 
+- [ ] Complete Test Cases  
 
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] completed
+#### v0.9 (Target 07/31)
 
-Feature  | Status
-:------- | :-----:
-Routing APIs  | In Progress
-Request Handlers  | Done
-Middleware  | Done
-Application Context  | Done
-Logging  | Done
-Views &amp; Templates  | Done
-Responses  | Done
-IoC Container  | Done
-Contracts  | Done
-Facades  | Done
-GoDoc Documentation  | In Progress
-Github Documentation  | In Progress
-Benchmarks  | Not Started
-Test Cases  | In Progress
+- [x] Routing APIs
+- [x] Request Handlers  
+- [x] Nested Middleware 
+- [x] Application Context
+- [x] Logging
+- [x] Views &amp; Templates
+- [x] Responses
+- [x] IoC Container
+- [x] Contracts  
+- [x] Facades 
 
 ## Support
 
