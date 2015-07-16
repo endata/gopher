@@ -269,9 +269,9 @@ router.All("/products", MyHandler)
 
    Blah
 
-* **Will you even provide LTS support?** 
+* **Will you provide Long-term support (LTS)?** 
 
-   Yes, please see our [Roadmap](#roadmap).
+   Yes, LTS options are planned for Gopher v3 (Target Release H1 2016) please see our [Roadmap](#roadmap).
 
 ## Support
 
