@@ -14,7 +14,7 @@ Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
 })
 ListenAndServe()
 ```
-```json
+```zsh
 > go run server.go
 
 INFO[] |----------------------------------------|   
