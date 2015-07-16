@@ -220,26 +220,6 @@ router.All("/products", MyHandler)
 
 //TODO
 
-# Advanced Topics
-
-//TODO
-
-## Creating Service Providers
-
-//TODO
-
-## Custom Bootstrapping 
-
-//TODO
-
-## API Documentation
-
-Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework)   
-
-## Performance &amp; Benchmarks
-
-//TODO
-
 ## Roadmap
 
 #### v0.9 (Beta Release 07/31) - ON TRACK
