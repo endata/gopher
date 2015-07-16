@@ -58,7 +58,7 @@
 * **Extensible**: Easy to add Service Providers or even replace the built-in ones.
 * **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more.
 * **Speedy**: Gopher is blazing fast. See our benchmarks.
-* **Documented**: APIs are thoroughly explained in both [GoDoc](https://godoc.org/github.com/gopherlabs/gopher-framework) and on this page.    
+* **Documented**: Thoroughly explained APIs
 
 ## Getting Started
 
