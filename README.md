@@ -261,9 +261,18 @@ router.All("/products", MyHandler)
 
 ## Frequently Asked Questions
 
-**I would like to start use Gopher for my projects, but is it ready?** 
+**Gopher looks great and I would like to start using it now, but how stable are its APIs?** 
 
+Gopher is currently in pre-alpha state 
 // TODO
+
+**Is anyone using Gopher yet?** 
+
+a
+
+**Will you even provide LTS support?** 
+
+Yes, please see our [Roadmap](#roadmap).
 
 ## Support
 
