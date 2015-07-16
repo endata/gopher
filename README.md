@@ -245,14 +245,7 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 
 ## Roadmap
 
-#### v1.0 (Target 08/31)
-
-- [ ] Complete GitHub Documentation  
-- [ ] Complete GoDoc Documentation  
-- [ ] Benchmarks 
-- [ ] Complete Test Cases  
-
-#### v0.9 (Target 07/31)
+#### v0.9 (Target Release 07/31) - ON TRACK
 
 - [x] Routing APIs
 - [x] Request Handlers  
@@ -264,6 +257,24 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 - [x] IoC Container
 - [x] Contracts  
 - [x] Facades 
+- [x] Initial Documentation  
+
+#### v1.0 (Target Release 08/31)
+
+- [ ] Extensibility APIs
+- [ ] Performance Benchmarks 
+- [ ] Enhanced Documentation  
+- [ ] Enhanced Test Cases  
+
+#### v2.0 (Target Release Q4 2015)
+
+- [ ] DB/ORM 
+- [ ] Mail
+- [ ] Sessions 
+- [ ] Caching
+- [ ] Hashing
+- [ ] Authentication
+- [ ] Queues? 
 
 ## Support
 
