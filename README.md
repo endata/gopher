@@ -247,6 +247,13 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 
 #### Road to v1.0
 
+
+- [ ] a task list item
+- [ ] list syntax required
+- [ ] normal **formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] completed
+
 Feature  | Status
 :------- | :-----:
 Routing APIs  | In Progress
