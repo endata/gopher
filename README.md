@@ -34,7 +34,6 @@ INFO[0000] |----------------------------------------|
 curl http://localhost:3000/
 Hello, Gopher!
 ```
-```
 
 ## Table of Contents
 
