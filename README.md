@@ -31,6 +31,7 @@
   * [Logging](#logging)
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
+  * [Configuration](#configuration)
 * [Architecture](#architecture)
   * [IoC Container](#ioc-container)
   * [Contracts](#contracts)
@@ -198,6 +199,10 @@ router.All("/products", MyHandler)
 ## Responses
 
 //TODO
+
+## Configuration
+
+// TODO
 
 # Architecture
 
