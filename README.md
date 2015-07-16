@@ -14,7 +14,7 @@ Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
 })
 ListenAndServe()
 ```
-```sed
+```AppleScript
 > go run server.go
 
 INFO[] |----------------------------------------|   
