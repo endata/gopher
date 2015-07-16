@@ -142,7 +142,7 @@ INFO[0000] |----------------------------------------|
 
 #### 4. Now, try it!
 
-```shell
+```awk
 curl http://localhost:3000/
 Hello, Gopher!
 ```
