@@ -245,7 +245,7 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 
 ## Roadmap
 
-#### v0.9 (Target Release 07/31) - ON TRACK
+#### v0.9 (Beta Release 07/31) - ON TRACK
 
 - [x] Routing APIs
 - [x] Request Handlers  
@@ -259,7 +259,7 @@ Gopher APIs are documented on [GoDoc](https://godoc.org/github.com/gopherlabs/go
 - [x] Facades 
 - [x] Initial Documentation  
 
-#### v1.0 (Target Release 08/31)
+#### v1.0 (Target Release 08/31) - ON TRACK
 
 - [ ] Extensibility APIs
 - [ ] Performance Benchmarks 
