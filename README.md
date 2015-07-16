@@ -263,11 +263,14 @@ router.All("/products", MyHandler)
 
 * **This looks great and I would like to start using Gopher right now, but how stable is it?** 
 
-   Gopher is currently in pre-alpha state 
+   Gopher is currently in alpha (pre v0.9 release) but by all means use it now! We don't have any planned breaking API changes 
+   (although we can't guarantee it won't happen) from now until the the v1.0 release as we are mainly focusing on performance, 
+   testing, bug fixes, and extensibility until then.  
 
 * **Is anyone using Gopher yet?** 
 
-   Blah
+   At Gopher Labs, we are using Gopher for several customer projects. If you, or anyone you know is using Gopher please let us
+   know and we can include them here. 
 
 * **Will you provide Long-term support (LTS)?** 
 
