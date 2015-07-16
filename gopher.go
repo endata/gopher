@@ -10,7 +10,7 @@ var (
 	App        *app
 	Log        f.Loggable
 	Route      f.Routable
-	RouteGroup f.Routegroupable
+	RouteGroup routeGroup
 	Context    f.Mappable
 	Render     f.Renderable
 )
@@ -33,6 +33,20 @@ type Config map[string]interface{}
 type ConfigLogger f.ConfigLogger
 type ConfigRouter f.ConfigRouter
 type ConfigRenderer f.ConfigRenderer
+
+type GroupMatcher struct {
+	Host       string
+	Schemes    string
+	PathPrefix string
+	Methods    []string
+	Queries    []string
+}
+
+type routeGroup struct{}
+
+func (g *routeGroup) New(matcher GroupMatcher) f.Routable {
+	return App.ctnr.RouteGroup.New(f.GroupMatcher(matcher))
+}
 
 func (m *app) Config(config ...map[string]interface{}) {
 	if len(config) > 0 {
@@ -70,7 +84,7 @@ func registerProviders() {
 	Context = c.Context
 	c.RegisterProvider(new(services.RouteProvider))
 	Route = c.Route
-	RouteGroup = c.RouteGroup
+	RouteGroup = routeGroup{}
 	c.RegisterProvider(new(services.RenderProvider))
 	Render = c.Render
 	f.Initialized = true
