@@ -261,6 +261,8 @@ router.All("/products", MyHandler)
 
 ## Frequently Asked Questions
 
+**I would like to start use Gopher for my projects, but is it ready?** 
+
 // TODO
 
 ## Support
