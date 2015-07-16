@@ -6,12 +6,13 @@ import (
 )
 
 var (
-	c       *f.Container
-	App     *app
-	Log     f.Loggable
-	Route   f.Routable
-	Context f.Mappable
-	Render  f.Renderable
+	c          *f.Container
+	App        *app
+	Log        f.Loggable
+	Route      f.Routable
+	RouteGroup f.Routegroupable
+	Context    f.Mappable
+	Render     f.Renderable
 )
 
 type app struct {
@@ -69,6 +70,7 @@ func registerProviders() {
 	Context = c.Context
 	c.RegisterProvider(new(services.RouteProvider))
 	Route = c.Route
+	RouteGroup = c.RouteGroup
 	c.RegisterProvider(new(services.RenderProvider))
 	Render = c.Render
 	f.Initialized = true
