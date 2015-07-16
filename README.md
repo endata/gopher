@@ -8,6 +8,30 @@
 [![Made with heart](https://img.shields.io/badge/made%20with-%E2%99%A5-orange.svg)](https://github.com/ricardo-rossi)
 [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+```go
+	Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		Render.Text(w, "Hello, Gopher!")
+	})
+	ListenAndServe()
+```
+```awk
+go run server.go
+
+INFO[0000] |----------------------------------------|   
+INFO[0000] |    _____                                   
+INFO[0000] |   / ____|           | |                    
+INFO[0000] |  | |  __  ___  _ __ | |__   ___ _ __       
+INFO[0000] |  | | |_ |/ _ \| '_ \| '_ \ / _ \ '__|      
+INFO[0000] |  | |__| | (_) | |_) | | | |  __/ |         
+INFO[0000] |   \_____|\___/| .__/|_| |_|\___|_|         
+INFO[0000] |               | |                          
+INFO[0000] |               |_|                          
+INFO[0000] |----------------------------------------|   
+INFO[0000] | GOPHER READY FOR ACTION ON PORT 3000             
+INFO[0000] |----------------------------------------|   
+```
+
+
 ```
    _____             
   / ____|           | |                            
