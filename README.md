@@ -13,8 +13,9 @@ Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
     Render.Text(w, "Hello, Gopher!")
 })
 ListenAndServe()
-
-go run server.go
+```
+```awk
+> go run server.go
 
 INFO[0000] |----------------------------------------|   
 INFO[0000] |    _____                                   
@@ -28,18 +29,6 @@ INFO[0000] |               |_|
 INFO[0000] |----------------------------------------|   
 INFO[0000] | GOPHER READY FOR ACTION ON PORT 3000             
 INFO[0000] |----------------------------------------|   
-```
-
-
-```
-   _____             
-  / ____|           | |                            
- | |  __  ___  _ __ | |__   ___ _ __               
- | | |_ |/ _ \| '_ \| '_ \ / _ \ '__|              
- | |__| | (_) | |_) | | | |  __/ |                 
-  \_____|\___/| .__/|_| |_|\___|_|                 
-              | |                                  
-              |_|                                  
 ```
 
 ## Table of Contents
