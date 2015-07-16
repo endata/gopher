@@ -9,12 +9,11 @@
 [![Join the chat at https://gitter.im/gopherlabs/gopher](https://img.shields.io/badge/GITTER-join%20chat-green.svg)](https://gitter.im/gopherlabs/gopher?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ```go
-	Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		Render.Text(w, "Hello, Gopher!")
-	})
-	ListenAndServe()
-```
-```awk
+Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
+    Render.Text(w, "Hello, Gopher!")
+})
+ListenAndServe()
+
 go run server.go
 
 INFO[0000] |----------------------------------------|   
