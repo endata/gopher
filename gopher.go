@@ -36,10 +36,10 @@ type ConfigRenderer f.ConfigRenderer
 
 type GroupMatcher struct {
 	Host       string
-	Schemes    string
 	PathPrefix string
 	Methods    []string
 	Queries    []string
+	Schemes    []string
 }
 
 type routeGroup struct{}
