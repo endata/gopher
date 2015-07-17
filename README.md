@@ -91,10 +91,6 @@ go get github.com/gopherlabs/gopher
 
 #### 2. Create your server.go file
 
-> All the examples in this documentation use the dot import notation for the purpose of clarity, as in *import . "github.com/gopherlabs/gopher"* 
-but it should be noted that the Go team does not recommend using the dot import since it can cause some odd behaviour in 
-certain cases.
-
 ```go
 package main
 
@@ -155,6 +151,12 @@ Awesome, it worked!
 Next, let's take a look at some of the basic concepts of Gopher:
 
 # The Basics
+
+> The API examples in this documentation use the dot import notation for the purpose of clarity, as in:
+ `import . "github.com/gopherlabs/gopher"` 
+but it should be noted that the Go team does not recommend using the dot import since it can cause some odd behaviour in 
+certain cases.
+
 
 ## Routing
 
