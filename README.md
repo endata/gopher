@@ -108,6 +108,10 @@ func main() {
 ```
 See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
 
+> For the purpose of clarity, the example above uses the dot import notation as in: 
+`import . "github.com/gopherlabs/gopher"` It should be noted, however, that the Go team does not recommend 
+using the dot import since it can cause some odd behaviour in certain cases.
+
 #### 3. Run your server
 
 ```shell
@@ -151,10 +155,6 @@ Awesome, it worked!
 Next, let's take a look at some of the basic concepts of Gopher:
 
 # The Basics
-
-> For the purpose of clarity, the API examples in this documentation imply the dot import notation as in: 
-`import . "github.com/gopherlabs/gopher"` It should be noted, however, that the Go team does not recommend 
-using the dot import since it can cause some odd behaviour in certain cases.
 
 ## Routing
 
