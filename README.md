@@ -108,7 +108,7 @@ func main() {
 ```
 See this example at: [routes/01_hello.go](https://github.com/gopherlabs/gopher-examples/blob/master/routes/01_hello.go)
 
-> **NOTE:** Only for the purpose of clarity, the example above uses the dot import notation as in: 
+> **NOTE:** Only for the purpose of syntax clarity, the example above uses the dot import notation as in: 
 `import . "github.com/gopherlabs/gopher"` It should be noted, however, that the Go team does not recommend 
 using the dot import since it can cause some odd behaviour in certain cases.
 
