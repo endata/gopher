@@ -91,6 +91,9 @@ go get github.com/gopherlabs/gopher
 
 #### 2. Create your server.go file
 
+> It should be noted that the Go team does not recommend using the dot import since it can cause some 
+odd behaviour in certain cases
+
 ```go
 package main
 
