@@ -91,8 +91,8 @@ go get github.com/gopherlabs/gopher
 
 #### 2. Create your server.go file
 
-> All the examples in the documentation use the dot import notation for clarity, but it should be noted 
-that the Go team does not recommend using the dot import since it can cause some odd behaviour in 
+> All the examples in the documentation use the dot import notation for clarity, as in ". github.com/gopherlabs/gopher" 
+but it should be noted that the Go team does not recommend using the dot import since it can cause some odd behaviour in 
 certain cases.
 
 ```go
