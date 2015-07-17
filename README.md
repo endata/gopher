@@ -69,12 +69,12 @@ Hello, Gopher!
 
 * **Simple**: Straightforward, clean *Idiomatic* Go syntax. 
 * **Intuitive**: Beautiful APIs for maximum coding happiness and productivity.
-* **Exposed**: No reflection or hidden magic. Just clean code.
+* **Exposed**: No reflection, dependency injection, or hidden magic. Just clean Go code.
 * **Modern**: Features an IoC Container, nested Middleware, flexible Routing, and more.
 * **Extensible**: Easy to add Service Providers or even replace the built-in ones.
 * **Comprehensive**: Routing, Handlers, Middleware, Logging, Views, and much more.
 * **Speedy**: Gopher is blazing fast. See our benchmarks.
-* **Documented**: Thoroughly explained APIs
+* **Documented**: Thoroughly detailed APIs
 
 ## Getting Started
 
