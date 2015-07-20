@@ -216,9 +216,13 @@ Or, you may even register a route that responds to all HTTP verbs using the
 Route.All("/", AllHandler)
 ```
 
-#### Route Parameters
+#### Route Variables
 
-//TODO
+```go
+Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
+  Render.Text(w, "Hello, "+Route.Var(r, "var"))
+})
+```
 
 #### Not Found Router
 
