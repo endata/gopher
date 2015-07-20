@@ -224,6 +224,17 @@ Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
 })
 ```
 
+#### Route Groups
+
+```go
+group := RouteGroup.New(GroupMatcher{
+  PathPrefix: "/products",
+})
+group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
+  Render.Text(rw, "Hello Group!")
+})
+```
+
 #### Not Found Router
 
 ```go
@@ -236,6 +247,22 @@ Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
 
 //TODO
 
+#### Middleware Lifecycle 
+
+//TODO
+
+#### App Middleware
+
+//TODO
+
+#### Router/Group Middleware
+
+//TODO
+
+#### Route Middleware
+
+//TODO
+
 ## Context
 
 ```go
@@ -243,6 +270,15 @@ Context.Set("user", "Ricardo")
 Route.Get("/user", func(w http.ResponseWriter, r *http.Request) {
   Render.Text(w, "Hello, "+Context.Get("user").(string))
 })
+```
+
+```go
+type Mappable interface {
+	Get(key string) interface{}
+	Has(key string) bool
+	Set(key string, value interface{})
+	Remove(key string)
+}
 ```
 
 ## Logging
