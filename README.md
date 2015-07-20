@@ -47,7 +47,6 @@ Hello, Gopher!
   * [Logging](#logging)
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
-  * [Configuration](#configuration)
 * [Architecture](#architecture)
   * [IoC Container](#ioc-container)
   * [Contracts](#contracts)
@@ -243,6 +242,17 @@ Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
 })
 ```
 
+#### Routing Configuration
+
+```go
+App.Config(Config{
+  KEY_ROUTER: ConfigRouter{
+    Port: 3002,
+    Host: "0.0.0.0",
+  },
+})
+```
+
 ## Middleware
 
 //TODO
@@ -285,6 +295,31 @@ type Mappable interface {
 
 //TODO
 
+```go
+type Loggable interface {
+	Info(msg string, args ...interface{})
+	Debug(msg string, args ...interface{})
+	Warn(msg string, args ...interface{})
+	Error(msg string, args ...interface{})
+	Fatal(msg string, args ...interface{})
+	Panic(msg string, args ...interface{})
+} 
+```
+#### Log Levels
+
+//TODO
+
+#### Logging Configuration 
+
+```go
+App.Config(Config{
+  KEY_LOGGER: ConfigLogger{
+    FullTimestamp: false,
+    LogLevel:      LEVEL_DEBUG,
+  },
+})
+```
+
 ## Views &amp; Templates
 
 //TODO
@@ -292,10 +327,6 @@ type Mappable interface {
 ## Responses
 
 //TODO
-
-## Configuration
-
-// TODO
 
 # Architecture
 
