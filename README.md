@@ -226,8 +226,11 @@ Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
 
 #### Not Found Router
 
-//TODO
-
+```go
+Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
+  Render.Text(rw, "Could not find page")
+})
+```
 
 ## Middleware
 
