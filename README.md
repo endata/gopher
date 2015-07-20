@@ -206,14 +206,14 @@ method of the [Route Facade](https://godoc.org/github.com/gopherlabs/gopher-fram
 on this example:
 
 ```go
-router.Match("/users", MyHandler, []string{"GET", "POST", "DELETE"}, MyAppMiddleWareRouteHanlder)
+Route.Match("/hello", MatchHandler, []string{"GET", "POST", "PUT"})
 ```
 
 Or, you may even register a route that responds to all HTTP verbs using the 
 [*All()*](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade.All) method:
 
 ```go
-router.All("/products", MyHandler)
+Route.All("/", AllHandler)
 ```
 
 #### Route Parameters
