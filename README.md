@@ -158,18 +158,26 @@ Next, let's take a look at some of the basic concepts of Gopher:
 
 ## Routing
 
-//TODO
-
-```go
-func(rw http.ResponseWriter, req *http.Request)
-```
 #### Routes
 
-Get(), Post(), etc..
+```go
+Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
+  Render.Text(w, "Hello, Gopher!")
+})
+```
 
 #### Request Handlers
 
-//
+```go
+func main() {
+	Route.Get("/hello", HelloHandler)
+	ListenAndServe()
+}
+
+func HelloHandler(w http.ResponseWriter, r *http.Request) {
+	Render.Text(w, "Hello, Handler!")
+}
+```
 
 
 #### Registering A Route For Multiple Verbs
