@@ -158,7 +158,7 @@ Next, let's take a look at some of the basic concepts of Gopher:
 
 ## Routing
 
-#### Routes
+#### The GET Route
 
 ```go
 Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
@@ -179,6 +179,23 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
+#### Route Verbs
+
+```go
+func main() {
+	Route.Get("/products", VerbHandler)
+	Route.Post("/form", VerbHandler)
+	Route.Put("/update", VerbHandler)
+	Route.Delete("/etc", VerbHandler)
+	Route.Head("/etc", VerbHandler)
+	Route.Options("/etc", VerbHandler)
+	ListenAndServe()
+}
+
+func VerbHandler(w http.ResponseWriter, r *http.Request) {
+	Render.Text(w, "Hello, "+r.Method)
+}
+```
 
 #### Registering A Route For Multiple Verbs
 
