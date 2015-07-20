@@ -238,7 +238,12 @@ Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
 
 ## Context
 
-//TODO
+```go
+Context.Set("user", "Ricardo Rossi")
+Route.Get("/user", func(w http.ResponseWriter, r *http.Request) {
+  Render.Text(w, "Hello, "+Context.Get("user").(string))
+})
+```
 
 ## Logging
 
