@@ -234,14 +234,25 @@ Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
 
 #### Route Groups
 
+Route groups allow you to share route attributes (such as path prefixes, hosts, methods, etc)  across a 
+large number of routes without needing to define those attributes on each individual routes. 
+
+Shared attributes are passed as type `GroupMatcher` as the first parameter to `RouteGroup.New()` as shown here:
+
 ```go
 group := RouteGroup.New(GroupMatcher{
   PathPrefix: "/products",
 })
+
 group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
   Render.Text(rw, "Hello Group!")
 })
 ```
+```awk
+> curl http://localhost:3000/products/group
+Hello Group!
+```
+
 
 #### Serving Static Files
 
