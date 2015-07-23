@@ -42,6 +42,9 @@ Hello, Gopher!
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
   * [Routing](#routing)
+    * Overview
+    * Request Handlers
+    * Route Verbs
   * [Middleware](#middleware)
   * [Context](#context)
   * [Logging](#logging)
@@ -157,7 +160,7 @@ Next, let's take a look at some of the basic concepts of Gopher:
 
 ## Routing
 
-#### The GET Route
+#### Overview
 
 ```go
 Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
