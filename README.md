@@ -251,7 +251,7 @@ type GroupMatcher struct {
 **Route Prefixes**
 
 The `PathPrefix` attribute may be used to prefix each route in the group with a given URI. 
-For example, you may want to prefix all route URIs within the group with /products:
+For example, you may want to prefix all route URIs within the group with */products*:
 
 ```go
 group := RouteGroup.New(GroupMatcher{
