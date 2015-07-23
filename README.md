@@ -257,10 +257,6 @@ Where:
 * `path` is path prefix for the files served by Gopher.
 * `dir` the name of the directory, which is to be used as the location of static assets.
 
-```go
-Route.Static("/", "./public")
-```
-
 For example, if you keep your images, CSS, and JavaScript files in a directory named public, you can do this:
 
 ```go
