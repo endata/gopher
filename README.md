@@ -275,6 +275,9 @@ http://localhost:3000/static/hello.html
 
 #### Not Found Route
 
+Using `Route.NotFound()`, you may register an error handler that handles all "404 Not Found" errors 
+in your application, allowing you to easily return custom 404 error pages, or do perform any custom logic. 
+
 ```go
 Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
   Render.Text(rw, "Could not find page")
