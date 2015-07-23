@@ -43,13 +43,14 @@ Hello, Gopher!
 * [The Basics](#the-basics)
   * [Routing](#routing)
     * [Routing Overview](#routing_overview)
-    * [Request Handlers](#overview)
-    * [Route Verbs](#overview)
-    * [Multiple Verbs](#overview)
-    * [Route Variables](#overview)
-    * [Route Groups](#overview)
-    * [Not Found Route](#overview)
-    * [Routing Configuration](#overview)
+    * [Request Handlers](#request-handlers)
+    * [Route Verbs](#route-verbs)
+    * [Multiple Verbs](#multiple-verbs)
+    * [Route Variables](#route-variables)
+    * [Route Groups](#route-groups)
+    * [Serving Static Files](#serving-static-files) 
+    * [Not Found Route](#not-found-route)
+    * [Routing Configuration](#routing-configuration)
   * [Middleware](#middleware)
   * [Context](#context)
   * [Logging](#logging)
@@ -240,6 +241,12 @@ group := RouteGroup.New(GroupMatcher{
 group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
   Render.Text(rw, "Hello Group!")
 })
+```
+
+#### Serving Static Files
+
+```go
+Route.Static("/", "./public")
 ```
 
 #### Not Found Route
