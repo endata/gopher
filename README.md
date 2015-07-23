@@ -245,8 +245,36 @@ group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
 
 #### Serving Static Files
 
+Serving files, such as images, CSS, JavaScript and other static files is accomplished with the help 
+of the `Route.Static()` API. 
+
+```go
+Route.Static(path string, dir string)
+```
+
+Where:
+
+* `path` is path prefix for the files served by Gopher.
+* `dir` the name of the directory, which is to be used as the location of static assets.
+
 ```go
 Route.Static("/", "./public")
+```
+
+For example, if you keep your images, CSS, and JavaScript files in a directory named public, you can do this:
+
+```go
+Route.Static("/static", "./public")
+```
+
+Now, you will be able to load the files under the public directory, from the path prefix "/static".
+
+```
+http://localhost:3000/static/images/kitten.jpg
+http://localhost:3000/static/css/style.css
+http://localhost:3000/static/js/app.js
+http://localhost:3000/static/images/bg.png
+http://localhost:3000/static/hello.html
 ```
 
 #### Not Found Route
