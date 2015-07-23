@@ -42,9 +42,14 @@ Hello, Gopher!
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
   * [Routing](#routing)
-    * Overview
-    * Request Handlers
-    * Route Verbs
+    * [Routing Overview](#routing_overview)
+    * [Request Handlers](#overview)
+    * [Route Verbs](#overview)
+    * [Multiple Verbs](#overview)
+    * [Route Variables](#overview)
+    * [Route Groups](#overview)
+    * [Not Found Route](#overview)
+    * [Routing Configuration](#overview)
   * [Middleware](#middleware)
   * [Context](#context)
   * [Logging](#logging)
@@ -160,7 +165,7 @@ Next, let's take a look at some of the basic concepts of Gopher:
 
 ## Routing
 
-#### Overview
+#### Routing Overview
 
 ```go
 Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
@@ -199,7 +204,7 @@ func VerbHandler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-#### Registering A Route For Multiple Verbs
+#### Multiple Verbs
 
 Sometimes you may need to register a route that responds to multiple HTTP verbs. 
 
@@ -237,7 +242,7 @@ group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
 })
 ```
 
-#### Not Found Router
+#### Not Found Route
 
 ```go
 Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
