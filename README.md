@@ -207,11 +207,10 @@ func VerbHandler(w http.ResponseWriter, r *http.Request) {
 
 #### Multiple Verbs
 
-Sometimes you may need to register a route that responds to multiple HTTP verbs. 
-
-You may do so using the [*Match()*](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade.Match) 
-method of the [Route Facade](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade) as shown 
-on this example:
+Sometimes you may need to register a route that responds to multiple HTTP verbs. You may do so using 
+the [*Match()*](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade.Match) method of 
+the [Route Facade](https://godoc.org/github.com/gopherlabs/gopher-framework#RouteFacade) as shown on 
+this example:
 
 ```go
 Route.Match("/hello", MatchHandler, []string{"GET", "POST", "PUT"})
@@ -237,20 +236,24 @@ Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
 Route groups allow you to share route attributes (such as path prefixes, hosts, methods, etc)  across a 
 large number of routes without needing to define those attributes on each individual routes. 
 
-Shared attributes are passed as type `GroupMatcher` as the first parameter to `RouteGroup.New()` as shown here:
+Shared attributes are passed as type `GroupMatcher` as the first parameter to `RouteGroup.New()` as shown below:
 
 ```go
 group := RouteGroup.New(GroupMatcher{
   PathPrefix: "/products",
 })
 
-group.Get("/group", func(rw http.ResponseWriter, req *http.Request) {
-  Render.Text(rw, "Hello Group!")
+group.Get("/item", func(rw http.ResponseWriter, req *http.Request) {
+  Render.Text(rw, "Hello Item!")
 })
 ```
+
+In this example, the */item* route inherits all the route attributes of its parent *RouteGroup*, such as 
+its path prefix:
+
 ```awk
-> curl http://localhost:3000/products/group
-Hello Group!
+> curl http://localhost:3000/products/item
+Hello Item!
 ```
 
 
