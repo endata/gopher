@@ -31,7 +31,7 @@ INFO[0000] | GOPHER READY FOR ACTION ON PORT 3000
 INFO[0000] |----------------------------------------|   
 ```
 ```awk
-curl http://localhost:3000/
+> curl http://localhost:3000/
 Hello, Gopher!
 ```
 
@@ -155,7 +155,7 @@ INFO[0000] |----------------------------------------|
 #### 4. Now, try it!
 
 ```awk
-curl http://localhost:3000/
+> curl http://localhost:3000/
 Hello, Gopher!
 ```
 Awesome, it worked!   
