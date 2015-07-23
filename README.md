@@ -238,6 +238,16 @@ large number of routes without needing to define those attributes on each indivi
 
 Shared attributes are passed as type `GroupMatcher` as the first parameter to `RouteGroup.New()`.
 
+```go
+type GroupMatcher struct {
+	Host       string
+	PathPrefix string
+	Methods    []string
+	Queries    []string
+	Schemes    []string
+}
+```
+
 **Route Prefixes**
 
 The `PathPrefix` attribute may be used to prefix each route in the group with a given URI. 
