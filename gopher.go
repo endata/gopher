@@ -1,6 +1,8 @@
 package gopher
 
 import (
+	"net/http"
+
 	f "github.com/gopherlabs/gopher-framework"
 	"github.com/gopherlabs/gopher-services"
 )
@@ -91,7 +93,11 @@ func registerProviders() {
 }
 
 func ListenAndServe() {
-	Route.(f.Servable).Serve()
+	Route.(f.Servable).ListenAndServe()
+}
+
+func GetHttpHandler() http.Handler {
+	return Route.(f.Servable).GetHttpHandler()
 }
 
 const (
