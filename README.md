@@ -42,7 +42,7 @@ Hello, Gopher!
 * [Getting Started](#getting-started)
 * [The Basics](#the-basics)
   * [Routing](#routing)
-    * [Routing Overview](#routing_overview)
+    * [Routing Overview](#routing-overview)
     * [Request Handlers](#request-handlers)
     * [Route Verbs](#route-verbs)
     * [Multiple Verbs](#multiple-verbs)
@@ -231,9 +231,22 @@ Route.All("/", AllHandler)
 
 #### Route Variables
 
+Sometimes you will need to capture segments of the URI within your route. You may do so by 
+defining route variables. Route variables are always encased within "curly" braces. They are 
+defined using the format *{name}* or *{name:pattern}*
+
+For example, you may need to capture a user's ID from the URL:
 ```go
-Route.Get("/{var}", func(w http.ResponseWriter, r *http.Request) {
-  Render.Text(w, "Hello, "+Route.Var(r, "var"))
+Route.Get("user/{id}", func(w http.ResponseWriter, r *http.Request) {
+  Render.Text(w, "User: "+Route.Var(r, "id"))
+})
+```
+
+You may define as many route parameters as required by your route:
+
+```go
+Route.Get("posts/{post}/comments/{comment}", func(w http.ResponseWriter, r *http.Request) {
+  // The entire map of route variables can be retrieved calling Route.Vars()
 })
 ```
 
