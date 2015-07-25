@@ -374,7 +374,7 @@ App.Config(Config{
 ```
 
 Otherwise, if you want more flexibility over the way you start your app, use the *GetHttpHandler()* function 
-instead, which returns a standard *[http.Handler]*(https://godoc.org/net/http#Handler):
+instead, which returns a standard [http.Handler](https://godoc.org/net/http#Handler):
 
 ```go
 http.ListenAndServe("localhost:8080", GetHttpHandler())
