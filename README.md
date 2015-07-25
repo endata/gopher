@@ -56,11 +56,7 @@ Hello, Gopher!
   * [Logging](#logging)
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
-* [Architecture](#architecture)
-  * [IoC Container](#ioc-container)
-  * [Contracts](#contracts)
-  * [Facades](#facades)  
-  * [Service Providers](#service-providers)  
+[]([Architecture](#architecture)[IoC Container](#ioc-container)[Contracts](#contracts)[Facades](#facades)[Service Providers](#service-providers))  
 []([Advanced Topics](#advanced-topics)[Creating Service Providers](#creating-service-providers)[Custom Bootstrapping](#custom-bootstrapping)[API Documentation](#api-documentation)[Performance &amp; Benchmarks](#performance--benchmarks))
 * [Roadmap](#roadmap)
 * [Frequently Asked Questions](#frequently-asked-questions)
@@ -403,25 +399,7 @@ App.Config(Config{
 
 //TODO
 
-# Architecture
-
-//TODO
-
-## IoC Container
-
-//TODO
-
-## Contracts
-
-//TODO
-
-## Facades  
-
-//TODO
-
-## Service Providers
-
-//TODO
+[]([Architecture](#architecture)[IoC Container](#ioc-container)[Contracts](#contracts)[Facades](#facades)[Service Providers](#service-providers))  
 
 ## Roadmap
 
