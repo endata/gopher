@@ -35,6 +35,11 @@ INFO[0000] |----------------------------------------|
 Hello, Gopher!
 ```
 
+### Want live code reload?
+
+Use either [gin](https://github.com/codegangsta/gin) or [fresh](https://github.com/pilu/fresh) to live 
+reload Gopher apps.
+
 ## Table of Contents
 
 * [Overview](#overview)
@@ -338,13 +343,42 @@ Route.NotFound(func(rw http.ResponseWriter, req *http.Request) {
 
 #### Routing Configuration
 
+**How do I change the port/host?**
+
+Gopher's *ListenAndServe()* function defaults to using HOST value of 0.0.0.0 and PORT 3000. 
+
+An easy way to change those values is to set PORT and HOST environment variables before running 
+Gopher like this: 
+
+```shell
+PORT=8080 HOST=localhost go run server.go
+```
+
+```awk
+> curl http://localhost:8080/
+Hello, Gopher!
+```
+
+If you don't want to set the PORT and HOST environment variables you can also configure those values 
+using the *App.Config()* API as shown below:
+
 ```go
 App.Config(Config{
   KEY_ROUTER: ConfigRouter{
-    Port: 3002,
-    Host: "0.0.0.0",
+    Port: 8080,
+    Host: "localhost",
+    StaticDirs: map[string]string{
+      "/static": "./static/",
+    },
   },
 })
+```
+
+Otherwise, if you want more flexibility over the way you start your app, use the *GetHttpHandler()* function 
+instead, which returns a standard *[http.Handler]*(https://godoc.org/net/http#Handler):
+
+```go
+http.ListenAndServe("localhost:8080", GetHttpHandler())
 ```
 
 ## Middleware
