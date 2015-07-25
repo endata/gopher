@@ -349,7 +349,7 @@ Gopher's *ListenAndServe()* function defaults to using HOST value of 0.0.0.0 and
 An easy way to change those values is to set PORT and HOST environment variables before running 
 Gopher like this: 
 
-```shell
+```awk
 PORT=8080 HOST=localhost go run server.go
 ```
 
