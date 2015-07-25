@@ -164,6 +164,11 @@ Next, let's take a look at some of the basic concepts of Gopher:
 
 #### Routing Overview
 
+You will define the routes for your application using the Route instance, which is satisfies the 
+[*Routable*](https://godoc.org/github.com/gopherlabs/gopher-framework#Routable) interface. 
+
+The most basic Gopher routes simply accept a URI and a Closure as in:
+
 ```go
 Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
   Render.Text(w, "Hello, Gopher!")
@@ -171,6 +176,9 @@ Route.Get("/", func(w http.ResponseWriter, r *http.Request) {
 ```
 
 #### Request Handlers
+
+Although you can use Closures as in the example above, it is often more practical to encapsulate 
+the request handling logic in handler functions which can be reused between routes:
 
 ```go
 func main() {
@@ -184,6 +192,8 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 ```
 
 #### Route Verbs
+
+Gopher provides routing methods to handle every specific http verb: 
 
 ```go
 func main() {
