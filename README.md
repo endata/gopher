@@ -35,8 +35,7 @@ INFO[0000] |----------------------------------------|
 Hello, Gopher!
 ```
 
-### Want live code reload?
-
+**Want live code reload?**
 Use either [gin](https://github.com/codegangsta/gin) or [fresh](https://github.com/pilu/fresh) to live 
 reload Gopher apps.
 
