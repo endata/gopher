@@ -13,7 +13,7 @@ var (
 	Log        f.Loggable
 	Route      f.Routable
 	RouteGroup routeGroup
-	Context    f.Mappable
+	Context    f.Contextable
 	Render     f.Renderable
 )
 
@@ -82,7 +82,7 @@ func convertConfig(in Config) f.Config {
 func registerProviders() {
 	c.RegisterProvider(new(services.LogProvider))
 	Log = c.Log
-	c.RegisterProvider(new(services.MapProvider))
+	c.RegisterProvider(new(services.ContextProvider))
 	Context = c.Context
 	c.RegisterProvider(new(services.RouteProvider))
 	Route = c.Route
@@ -104,7 +104,7 @@ const (
 	KEY_LOGGER   = f.LOGGER
 	KEY_ROUTER   = f.ROUTER
 	KEY_RENDERER = f.RENDERER
-	KEY_MAPPER   = f.MAPPER
+	KEY_CONTEXT  = f.CONTEXT
 )
 
 // Log Levels
