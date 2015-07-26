@@ -440,18 +440,35 @@ Log.Panic("I'm bailing.")
 
 #### Log Levels
 
-You can set the logging level on, so it will only log entries with that severity or anything above it:
+You can set the logging level on using the global *App.Config()* API, so it will only log entries with 
+that severity or anything above it:
 
+```go
+App.Config(Config{
+  KEY_LOGGER: ConfigLogger{LogLevel: LEVEL_INFO},
+})
 
+// Debug logs will not be logged since we set the Log Level to LEVEL_INFO
+Log.Debug("Useful debugging information.")
 
+// Anything with severity Info or above it will be logged
+Log.Info("Something noteworthy happened!")
+
+Log.Warn("You should probably take a look at this.")
+
+Log.Error("Something failed but I'm not quitting.")
+```
 
 #### Logging Configuration 
+
+Besides comfiguring the log level, you can also specify the time stamp format for the logging 
+output by setting the *ConfigLogger.TimestampFormat* attribute as shown below:
 
 ```go
 App.Config(Config{
   KEY_LOGGER: ConfigLogger{
-    FullTimestamp: false,
-    LogLevel:      LEVEL_DEBUG,
+    TimestampFormat: time.RFC822,
+    LogLevel:        LEVEL_INFO,
   },
 })
 ```
