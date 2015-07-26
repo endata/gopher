@@ -382,17 +382,44 @@ http.ListenAndServe("localhost:8080", GetHttpHandler())
 
 ## Middleware
 
+In Gopher, a Middleware is a function with access to the request object (*http.Request), the response 
+object (http.ResponseWriter), the next middleware in the application's request-response cycle, 
+commonly denoted by a function argument named next, which accepts a variadic number or arguments satisfying
+the *MiddlewareHandler* type.
+
+```go
+type MiddlewareHandler func(w http.ResponseWriter, r *http.Request, next func(), args ...interface{})
+```
+
+Gopher Middleware can:
+
+* Execute any code.
+* Make changes to the request and the response objects.
+* End the request-response cycle.
+* Call the next middleware in the stack.
+
+If the current middleware does not end the request-response cycle, it must call *next()* to pass control to 
+the next middleware, otherwise the request will be left hanging.
+
+A Gopher application can use the following kinds of middleware:
+
+* [Application-level Middleware](#application-level-middleware)
+* Router-level Middleware
+* RouteGroup-level Middleware
+* Route-level Middleware
+* Built-in Middleware
+
+#### Middleware in the Request-Response Lifecycle 
+
 //TODO
 
-#### Middleware Lifecycle 
+#### Application-level Middleware
 
 //TODO
 
-#### App Middleware
+#### Router-level Middleware
 
-//TODO
-
-#### Router/Group Middleware
+#### RouteGroup-level Middleware
 
 //TODO
 
