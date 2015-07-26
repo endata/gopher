@@ -461,7 +461,7 @@ Log.Error("Something failed but I'm not quitting.")
 
 #### Logging Configuration 
 
-Besides comfiguring the log level, you can also specify the time stamp format for the logging 
+Besides configuring the log level, you can also specify the time stamp format for the logging 
 output by setting the *ConfigLogger.TimestampFormat* attribute as shown below:
 
 ```go
