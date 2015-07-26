@@ -420,21 +420,30 @@ type Mappable interface {
 
 ## Logging
 
-//TODO
+Gopher has six logging levels: Debug, Info, Warning, Error, Fatal and Panic:
 
 ```go
-type Loggable interface {
-	Info(msg string, args ...interface{})
-	Debug(msg string, args ...interface{})
-	Warn(msg string, args ...interface{})
-	Error(msg string, args ...interface{})
-	Fatal(msg string, args ...interface{})
-	Panic(msg string, args ...interface{})
-} 
+log.Debug("Useful debugging information.")
+
+log.Info("Something noteworthy happened!")
+
+log.Warn("You should probably take a look at this.")
+
+log.Error("Something failed but I'm not quitting.")
+
+// Calls os.Exit(1) after logging
+log.Fatal("Bye.")
+
+// Calls panic() after logging
+log.Panic("I'm bailing.")
 ```
+
 #### Log Levels
 
-//TODO
+You can set the logging level on, so it will only log entries with that severity or anything above it:
+
+
+
 
 #### Logging Configuration 
 
