@@ -56,6 +56,12 @@ reload Gopher apps.
     * [Not Found Route](#not-found-route)
     * [Routing Configuration](#routing-configuration)
   * [Middleware](#middleware)
+    * [Middleware &amp; the Request-Response Lifecycle](#)
+    * [Application-level Middleware](#application-level-middleware)
+    * [Router-level Middleware](#router-level-middleware)
+    * [RouteGroup-level Middleware](#routegroup-level-middleware)
+    * [Route-level Middleware](#route-level-middleware)
+    * [Built-in Middleware](#built-in-middleware)
   * [Context](#context)
   * [Logging](#logging)
   * [Views &amp; Templates](#views--templates)
@@ -404,12 +410,12 @@ the next middleware, otherwise the request will be left hanging.
 A Gopher application can use the following kinds of middleware:
 
 * [Application-level Middleware](#application-level-middleware)
-* Router-level Middleware
-* RouteGroup-level Middleware
-* Route-level Middleware
-* Built-in Middleware
+* [Router-level Middleware](#router-level-middleware)
+* [RouteGroup-level Middleware](#routegroup-level-middleware)
+* [Route-level Middleware](#route-level-middleware)
+* [Built-in Middleware](#built-in-middleware)
 
-#### Middleware in the Request-Response Lifecycle 
+#### Middleware &amp; the Request-Response Lifecycle 
 
 //TODO
 
