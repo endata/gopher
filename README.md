@@ -64,6 +64,9 @@ reload Gopher apps.
     * [Built-in Middleware](#built-in-middleware)
   * [Context](#context)
   * [Logging](#logging)
+    * [Logging Overview](#logging-overview)
+    * [Log Levels](#log-levels)
+    * [Logging Configuration](#logging-configuration)
   * [Views &amp; Templates](#views--templates)
   * [Responses](#responses)
 []([Architecture](#architecture)[IoC Container](#ioc-container)[Contracts](#contracts)[Facades](#facades)[Service Providers](#service-providers))  
@@ -456,6 +459,8 @@ type Mappable interface {
 ```
 
 ## Logging
+
+#### Logging Overview
 
 Gopher has six logging levels: Debug, Info, Warning, Error, Fatal and Panic:
 
