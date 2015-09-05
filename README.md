@@ -527,7 +527,7 @@ App.Config(Config{
 
 ## Roadmap
 
-#### v0.9 (Beta Release 07/31) - ON TRACK
+#### v0.9 
 
 - [x] Routing APIs
 - [x] Request Handlers  
@@ -541,14 +541,14 @@ App.Config(Config{
 - [x] Facades 
 - [x] Initial Documentation  
 
-#### v1.0 (Target Release 08/31) - ON TRACK
+#### v1.0 
 
 - [ ] Extensibility APIs
 - [ ] Performance Benchmarks 
 - [ ] Enhanced Documentation  
 - [ ] Enhanced Test Cases  
 
-#### v2.0 (Target Release Q4 2015)
+#### v2.0 
 
 - [ ] DB/ORM 
 - [ ] Mail
@@ -558,7 +558,7 @@ App.Config(Config{
 - [ ] Authentication
 - [ ] Queues? 
 
-#### v3.0 (Target Release H1 2016)
+#### v3.0 
 
 - [ ] Micro-Gopher Docker Containers
 - [ ] Health &amp; Service Instrumentation
